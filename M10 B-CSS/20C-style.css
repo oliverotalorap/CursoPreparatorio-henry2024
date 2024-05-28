@@ -1,0 +1,38 @@
+#titulo { color: red; }
+
+p.especial { color:blueviolet; 
+    border: dashed 2px orange; 
+    font-size: 15px;
+}
+p.texto { color: blue; 
+    border: solid 4px rgb(20, 20, 199); 
+    font-size: 20px;
+}
+p.super { color:brown; border: double 6px red; 
+    font-size: 20px; padding: 3%;
+}
+
+p { color: green; }
+
+div p {
+    color:aquamarine; }
+div h2, div h3 {
+    color:brown; }
+    /*
+* {
+    font-size: 16px;
+    color:rgb(230, 134, 18); }
+
+body {
+    color: green;
+} */
+/* -Esto es un comentario- */
+
+.color {
+    color:firebrick;
+    color:chartreuse;
+}
+
+
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios</title>
+        <H1>74-EJEMPLO 
+            <BR>CODIGO DE UN FORMULARIOS </H1>
+            </head>
+            <body>
+                <form action="datos.js" method="GET" enctype="multipart/form-data">
+
+                    <div>
+                        <!--1- Parrafo de la etiqueta "Label" -->
+                        <P>1- Datos</P>
+                        <label for="nombre completo">Nombre Completo</label>
+                        <input type="text" name="nombre" value=""/>
+                        <br>
+                        <br>
+                        <label for="correo electronico">Correo Electronico</label>
+                        <input type="text" name="email" value=""/>
+                     <br>
+                     <br>
+                        <!--2- Ejemplos de grupo de radios -->
+                        <lavel for="grupo">Genero:</lavel>
+                        <input type="radio" name="grupo" id="opcion1" value="op1"/>
+                        <label for="opcion1">Femenino</label>
+                        <input type="radio" name="grupo" id="opcion2" value="op2"/>
+                        <label for="opcion2">Masculino</label>                   
+                    </div>
+                    <br>
+                    <div>
+                    <!-- 3- Menu desplegable "<select>"-->
+
+                        <label for="talles">Talles:</label>    
+                        <select name="talle">
+                            <option value="XL">BinLarge.</opcion>
+                            <option value="L">Large.</opcion>
+                            <option value="M">Medium.</opcion>
+                            <option value="S">Small.</opcion>
+                        </select>
+                    </div>
+                    <br>
+                </form>
+
+                <!-- 4- Texto modificable-->
+                <label for="consulta">Consulta:</label>
+                <textarea name="Consulta" rows="5" cols="33"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Borrar" />
+    
+    <br>
+    <br>
+    <div>
+    <!--6- Ejemplos de grupo checkbox -->
+    <p>6- Ejemplos de grupo checkbox </p>
+        <lavel for="grupo"> Grupo de opciones:</lavel>
+        <br>
+        <input type="checkbox" name="grupo" id="opcion1" value="op1"/>
+        <label for="opcion1">Opción-1</label>
+        <input type="checkbox" name="grupo" id="opcion2" value="op2"/>
+        <label for="opcion2">Opción-2</label>
+        <br>
+        <input type="checkbox" name="grupo" id="opcion3" value="op3"/>
+        <label for="opcion3">Opción-3</label>
+        <input type="checkbox" name="grupo" id="opcion4" value="op4"/>
+        <label for="opcion4">Opción-4</label>
+    </div>
+    <P>7- Parrafo con el etiquetas "p" </p>
+    <p>P-A</p>
+    <p>P-B</p>
+    <p>P-C</p>
+    <br>
+    <p>7- -lista Desordenada "ul"-</P>
+    <ul>
+        <il>
+            <li>1</li>
+            <li>4</li>
+            <li>2</li>
+            <li>3</li>
+        </il>
+
+</body>
+</html>
