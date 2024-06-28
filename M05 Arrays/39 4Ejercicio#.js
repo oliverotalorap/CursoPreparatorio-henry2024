@@ -26,3 +26,4 @@ var cumplenCondicion = numeros.every(( num ) => {return num >2});
 console.log(cumplenCondicion); 
 
 //console.log(cumplenCondicion); 
+//console.log(cumplenCondicion); 
