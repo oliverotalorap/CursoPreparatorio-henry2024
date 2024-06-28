@@ -31,3 +31,4 @@ var cumplenCondicion = colores.every(( num ) => {return num <5});
 console.log(cumplenCondicion);
 
 //console.log(cumplenCondicion);
+console.log(cumplenCondicion);

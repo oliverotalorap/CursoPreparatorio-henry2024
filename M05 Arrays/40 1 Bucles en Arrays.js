@@ -25,5 +25,3 @@ encontrarLetraP('JavaScript');
 encontrarLetraP('Apretar');
          //  console.log(encontrarLetraP);
 // console.log(letras);
-
-
