@@ -19,3 +19,4 @@ console.log("Ejercicio " + (1+1) )
 var nombres = ['Anyi', 'Beto', 'Carlos', 'Dany', "Edwin"]
 console.log(nombres);
 console.log(nombres.length);
+//console.log(nombres.length);

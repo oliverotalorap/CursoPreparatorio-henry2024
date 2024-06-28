@@ -44,4 +44,6 @@ let pos = 3, numElementos = 1;
 let elementosEliminados = vegetales.splice(pos, numElementos)
 // ["Nabo", "Rábano"] ==> Lo que se ha guardado en "elementosEliminados"
 console.log(vegetales)
+
+//console.log(vegetales)
 // ["Repollo", "Zanahoria"] ==> Lo que actualmente tiene "vegetales"

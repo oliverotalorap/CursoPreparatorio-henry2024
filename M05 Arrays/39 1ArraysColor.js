@@ -22,4 +22,6 @@ console.log("Ejercicio "+3+ " numeros");
 var numeros = [ 7, 6, 8, 9];
 var cumplenCondicion = numeros.every(( num ) => {return num > 5});
 console.log(cumplenCondicion);
+
+//console.log(cumplenCondicion);
 //return numeros [numeros.length -1];

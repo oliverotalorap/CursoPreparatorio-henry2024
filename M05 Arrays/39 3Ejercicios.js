@@ -29,3 +29,5 @@ var existe2 = colores.includes( 2 ); console.log(existe2);
 console.log(colores[5]);
 var cumplenCondicion = colores.every(( num ) => {return num <5});
 console.log(cumplenCondicion);
+
+//console.log(cumplenCondicion);

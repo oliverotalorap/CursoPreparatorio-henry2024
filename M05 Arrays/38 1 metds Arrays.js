@@ -50,6 +50,7 @@ numeros.forEach(num => console.log(num));
 var masUno = numeros.map((num) => {return num +1;});
 console.log(masUno);
 
+//console.log(masUno);
 // var cumplenCondicion = numeros.every(( num ) => {return num > 5});
 // console.log(cumplenCondicion);
 
