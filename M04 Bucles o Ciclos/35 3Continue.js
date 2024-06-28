@@ -1,3 +1,5 @@
+console.log("Ejercicio " + (0.5 + 0.5) +" Continue" );
+
 let i = 0;
 let n = 0;
 while (i < 5) {
@@ -6,6 +8,7 @@ while (i < 5) {
       continue;
    n += i;
 }
+
 
 checkiandj:
 i = 1;

@@ -1,36 +1,26 @@
-var suma = 0;
-for (let i = 0; i<6; i++) {
-  suma = suma + i;
- console.log('Variable de iteración: ', i);
-}
- console.log('Variable suma: ', suma);
-
- console.log(1+"-Ejer");
- var suma = 0;
- while(suma < 3) {
-  suma = suma + 1;
-     console.log(suma); };
-
-
-console.log(2+"-Ejer");
-var foo = 3;
-switch (foo) {
-  case -1:  console.log('1 negativo');
-  case 3:  console.log('1 positivo');
+console.log("Ejercicio " + (0.5 + 0.5) +" switch" );
+var expr = 'Cocos';
+// var expr = "Naranjas";
+var expr = "Cerezas";
+// var expr = "Papayas";
+switch (expr) {
+  case "Naranjas": console.log("El kilogramo de naranjas cuesta $0.59.");
     break;
-  case 0: // foo es 0, por lo tanto se cumple la condición y se ejecutara el siguiente bloque
-    console.log(0+" puntos")
-    // NOTA: el "break" olvidado debería estar aquí
-  case 1: // No hay sentencia "break" en el 'case 0:', por lo tanto este caso también será ejecutado
-        console.log(1+2);
-  break; // Al encontrar un "break", no será ejecutado el 'case 2:'
-  case 2:  console.log(2*3);
+  case "Manzanas": console.log("El kilogramo de manzanas cuesta $0.32.");
     break;
-  default:
-    console.log('default');
+  case "Platanos": console.log("El kilogramo de platanos cuesta $0.48.");
+    break;
+  case "Cerezas": console.log("El kilogramo de cerezas cuesta $3.00.");
+  //  break;
+  case "Mangos":
+  case "Papayas": console.log("El kilogramo de mangos y papayas cuesta $2.79.");
+  //  break;
+  default: console.log("Lo lamentamos, por el momento no disponemos de " + expr + ".");
 }
+console.log("¿Hay algo más que te quisiera consultar?");
 
-console.log(3+"-Ejer");
+
+console.log("Ejercicio " + (1 + 1) +" switch" );
 var foo = 2;
 switch (foo) {
   case 9: console.log("suma");
@@ -45,7 +35,9 @@ switch (foo) {
 }
 
 console.log(4+"-Ejer");
-var Animal = 'Jirafa';
+var Animal = "Perro";
+ var Animal = "Condor";
+// var Animal = "Mosca";
 switch (Animal) {
   case 'Vaca':
   case 'Perro':
@@ -53,14 +45,14 @@ switch (Animal) {
   case 'Jirafa':
     console.log('Este animal SI subirá al Arca de Noé.');
   break;
-  case 'Deisy':
-  case 'Nico':
-  case 'Vale':
-  case 'Oliver':
-    console.log('Esta persona SI Entrara al Arca.');
+  case "Aguila":
+  case "Alcon":
+  case "Condor":
+    console.log('Esta ave escoltara el Arca.');
     break;
   case 'Dinosaurio':
   case 'Mosca':
+  case "Tiburon":
   default: 
   console.log('Este animal NO lO HARA.');
 }

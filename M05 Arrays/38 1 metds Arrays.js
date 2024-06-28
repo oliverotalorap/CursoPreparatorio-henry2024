@@ -1,4 +1,4 @@
-console.log(1 + " Ejer")
+console.log(1 + " Ejercicio")
 // Arreglos
 var colores = ['amarillo', 'azul'];
 colores.push('rojo');
@@ -7,15 +7,15 @@ colores.unshift('verde');
 //colores.shift();
 console.log(colores);
 
-console.log(2 + " Ejer");
+console.log(2 + " Ejercicio");
 // arreglos de pintores
 // INCLUDES
 var pintores = ['Picasso', 'Velázquez', 'Van Gogh', 'Dalí'];
 var existeDali = pintores.includes('Dalí');
-// console.log(existeDali);
+ console.log(existeDali);
 // console.log(pintores);
 
-console.log(3 + " Ejer");
+console.log(3 + " Ejercicio");
 // EVERY
 var numeros = [ 7, 6, 8, 9];
 console.log(numeros.includes(5));

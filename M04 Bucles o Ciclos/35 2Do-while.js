@@ -1,12 +1,14 @@
+console.log("Ejercicio " + (0.5 + 0.5) +" DoWhile /HacerMientras" );
+
 let result = '';
 let i = 0;
 do {
   i = i + 1;
   result = result + i; }
 while (i<5);
-console.log(result)
+console.log(result) // Expected output: "12345"
 console.log(i);
-// Expected output: "12345"
+
 
 // do.  sentencia;      while.  (condición);
 
@@ -26,29 +28,24 @@ while (i < 5) { i++;
    n += i;
 }
 
-console.log(4+"-Ejer");
+console.log(4+"-Ejercicio switch");
 var expr = 'Cocos';
 switch (expr) {
-    case 'Naranjas':
-      console.log('El kilogramo de naranjas cuesta $0.59.');
+    case 'Naranjas': console.log('El kilogramo de naranjas cuesta $0.59.');
     break;
-    case 'Manzanas':
-      console.log('El kilogramo de manzanas cuesta $0.32.');
+    case 'Manzanas': console.log('El kilogramo de manzanas cuesta $0.32.');
     break;
-    case 'Platanos':
-      console.log('El kilogramo de platanos cuesta $0.48.');
+    case 'Platanos': console.log('El kilogramo de platanos cuesta $0.48.');
     break;
-    case 'Cerezas':
-      console.log('El kilogramo de cerezas cuesta $3.00.');
+    case 'Cerezas': console.log('El kilogramo de cerezas cuesta $3.00.');
     break;
     case 'Mangos':
-    case 'Papayas':
-      console.log('El kilogramo de mangos y papayas cuesta $2.79.');
+    case 'Papayas': console.log('El kilogramo de mangos y papayas cuesta $2.79.');
     break;
-    default:
-      console.log('Lo lamentamos, por el momento no disponemos de ' + expr + '.');
+    default: console.log('Lo lamentamos, por el momento no disponemos de ' + expr + '.');
   }
-  console.log("¿Hay algo más que te quisiera consultar?");
+  console.log("¿Hay algo más que quisiera consultar?");
+
 
   console.log(5+"-Ejer");
   function doWhile(num) {

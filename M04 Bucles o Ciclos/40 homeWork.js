@@ -84,6 +84,7 @@ console.log(5+ " Ejec");
     // Si no es ninguno de esos colores           --> "Color not found".
     // IMPORTANTE: utilizar el statement SWITCH.
     // Tu código:
+
 var color ="paint";
 switch(color){
     //  case "blue": return "This is blue";
@@ -171,9 +172,9 @@ function esPrimo(num) {
        if (num % i === 0) console.log(false); }
         console.log(true);
 }
+
 esPrimo(8);
-// esPrimo(8);
-// esPrimo(11);
+esPrimo(11);
 
 console.log(12+ " Ejec");
 function esVerdadero(valor) {

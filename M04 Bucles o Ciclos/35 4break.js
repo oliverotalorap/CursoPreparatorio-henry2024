@@ -1,6 +1,7 @@
-var i = 1;
-function comprobarBreak(x) {
+console.log("Ejercicio " + (0.5 + 0.5) +" Break" );
 
+function comprobarBreak(x) {
+var i = 1;
     while (i < 6) {
        if (i == 3)
           break;
@@ -9,6 +10,7 @@ function comprobarBreak(x) {
     return i * x;
  }
  comprobarBreak(1);
+ 
 
  console.log(2+"-Ejer");
  Math.max(1,2,3,4,5,);
