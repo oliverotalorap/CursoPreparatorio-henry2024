@@ -27,4 +27,3 @@ console.log(cumplenCondicion);
 
 //console.log(cumplenCondicion); 
 //console.log(cumplenCondicion); 
-//console.log(cumplenCondicion); 
