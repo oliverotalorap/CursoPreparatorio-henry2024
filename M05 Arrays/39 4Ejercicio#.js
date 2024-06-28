@@ -19,9 +19,10 @@ var existe2 = numeros.includes("amarillo"); console.log(existe2);
 console.log("salto de linea") 
 
 
-// console.log(numeros[0]);
+console.log(numeros[0]);
 console.log(numeros[3]);
 var cumplenCondicion = numeros.every(( num ) => {return num <6});
 console.log(cumplenCondicion);
 var cumplenCondicion = numeros.every(( num ) => {return num >2});
 console.log(cumplenCondicion); 
+
