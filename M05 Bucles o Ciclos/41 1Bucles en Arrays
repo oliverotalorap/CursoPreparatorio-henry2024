@@ -1,0 +1,29 @@
+console.log("Ejermplo " + 1);
+// FOR
+var arr = [1, 2, 3, 4, 5];
+//for (let i = 0; i < 3; i++) {
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+    //    console.log(arr);
+}
+
+console.log("Ejermplo " + (1+1));
+// WHILE
+var arr = [];
+while (arr.length < 5) {
+    arr.push('Camilo');
+    //console.log(arr);
+}
+console.log(arr);
+
+console.log("Ejermplo " + (2+1));
+function encontrarLetraP(string) {
+    var letras = string.split("");
+    for(let i = 0; i < letras.length; i++) {
+        if (letras[i] === "p") {
+            console.log("si contiene a P")
+        }
+    }
+}
+encontrarLetraP("Javascritp");
+encontrarLetraP("Henry p");
