@@ -24,6 +24,7 @@ function agregarSimboloExclamacion(str) {
     // Ejemplo: "hello world" ---> "hello world!"
     // Tu código:
     // return str + "!"; - NO FUNCIONA-
+
     console.log(str + "!");
     console.log((str) + "!");
  }

@@ -1,23 +1,23 @@
-console.log(1 +" Ejercicio");
+console.log("C7-Arrays Ejercicio 01");
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
    return array[0];
 }
-console.log(devolverPrimerElemento(['uno', 33, 2, 3, 4, 5, 6, 7]));
+console.log(devolverPrimerElemento([2, 3, 4, 5, 6,'uno', 33, 7]));
 
-console.log(2 +" Ejercicio");
+console.log("C7-Arrays Ejercicio "+ 2);
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
    return array[array.length -1];
-
+   
    const ultimoElemento = array.length -1;
    return array[ultimoElemento];
 }
-console.log(devolverUltimoElemento([1, 2, 3, 4, 5, 6, 22, 77]));
+console.log(devolverUltimoElemento([1, 2, 3, 4, 5, 6, 22, "Edison"]));
 
-console.log(3 +" Ejercicio");
+console.log("C7-Arrays Ejercicio "+ (1+2));
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
@@ -26,7 +26,75 @@ function obtenerLargoDelArray(array) {
 }
 console.log(obtenerLargoDelArray([1, 2, 3, 4, 'hola', 6, 'Eje-3',8]));
 
-console.log(4 +" Ejercicio");
+console.log("C7-Arrays Ejercicio "+ 4);
+function agregarItemAlFinalDelArray(array, elemento) {
+   // Agrega el "elemento" al final del arreglo recibido.
+   // Retorna el arreglo.
+   // Tu código:
+   console.log(array);
+   array.push('elemento', elemento, 'ocho');
+   return array;
+}
+console.log(agregarItemAlFinalDelArray([1, 2, 3 , 4, 'dia']));
+
+
+console.log("C7-Arrays Ejercicio "+ 5," agregrItem");
+function agregarItemAlComienzoDelArray(array, elemento) {
+   // Agrega el "elemento" al comienzo del arreglo recibido.
+   // Retorna el arreglo.
+   // Tu código:
+   console.log(array);
+   array.unshift("elementoInicio"); 
+   return array;
+}
+//agregarItemAlComienzoDelArray([4, 5, 'seis']);            //estudiar el pq;
+console.log(agregarItemAlComienzoDelArray([4, 5, 'seis']));
+
+
+console.log("C7-Arrays Ejercicio "+ 6 + " -invertirArray-");
+let miArreglo = [1, 2, 3, 4, 5];
+var miArregloInvertido = miArreglo.reverse();
+
+console.log(miArreglo);  // Salida: [1, 2, 3, 4, 5,]
+console.log(miArreglo.reverse());  // Salida: [5, 4, 3, 2, 1]
+console.log(miArregloInvertido);  // Salida: [5, 4, 3, 2, 1]
+
+
+console.log("C7-Arrays Ejercicio "+ 7 + " -ordenarArray-");
+function ordenarArray(array) {
+   // Ordena los elementos del areglo array de menor a mayor.
+   // Devuelve el arreglo resultante.
+   // Tu código:
+   
+ }
+ //module.exports = ordenarArray;
+ //module.exports = ordenarArray;
+
+
+
+console.log("C7-Arrays Ejercicio "+ 8 + " -econtrarElemento-");
+function arrayContiene(array, elemento) {
+   // Verifica si el elemento existe dentro del arreglo recibido.
+   // Retornar true si está, o false si no está.
+   // Tu código: 
+
+   for(var i = 0; i < array.length; i++){
+      if (array[i] === 'elemento'){
+   //   return true;
+      }
+   }
+   //return false;
+   var contieneElemento = array.includes('elemento');
+   return contieneElemento;
+
+   return array.includes('elemento');
+}
+console.log(arrayContiene([1, 2, 'hola', 4, 'dia',16, 'elemento']));
+
+
+
+
+
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
@@ -43,27 +111,7 @@ function incrementarPorUno(array) {
 }
 console.log(incrementarPorUno([1, 2, 3, 4, 5 , 6, "dia"]));
 
-console.log(5 +" Ejercicio");
-function agregarItemAlFinalDelArray(array, elemento) {
-   // Agrega el "elemento" al final del arreglo recibido.
-   // Retorna el arreglo.
-   // Tu código:
-   console.log(array);
-   array.push('elemento', elemento, 'ocho');
-   return array;
-}
-console.log(agregarItemAlFinalDelArray([1, 2, 3 , 4, 'dia']));
 
-console.log(6 +" Ejercicio");
-function agregarItemAlComienzoDelArray(array, elemento) {
-   // Agrega el "elemento" al comienzo del arreglo recibido.
-   // Retorna el arreglo.
-   // Tu código:
-   console.log(array);
-   array.unshift('elemento', 'dos', elemento,); 
-   return array;
-}
-console.log(agregarItemAlComienzoDelArray([4, 5, 'seis']));
 
 console.log(7 +" Ejercicio");
 function dePalabrasAFrase(palabras) {
@@ -86,23 +134,6 @@ function dePalabrasAFrase(palabras) {
 console.log(dePalabrasAFrase(['Hello', 'world!']));
 
 console.log(8 +" Ejercicio");
-function arrayContiene(array, elemento) {
-   // Verifica si el elemento existe dentro del arreglo recibido.
-   // Retornar true si está, o false si no está.
-   // Tu código: 
-
-   for(var i = 0; i < array.length; i++){
-      if (array[i] === 'elemento'){
-   //   return true;
-      }
-   }
-   //return false;
-   var contieneElemento = array.includes('elemento');
-   return contieneElemento;
-
-   return array.includes('elemento');
-}
-console.log(arrayContiene([1, 2, 'hola', 4, 'dia',16, 'elemento']));
 
 console.log(9 +" Ejercicio");
 function agregarNumeros(arrayOfNums) {
@@ -347,3 +378,5 @@ function continueStatement(num) {
    return aux;
 }
 console.log(continueStatement(0));
+
+
