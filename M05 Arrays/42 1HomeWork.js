@@ -65,7 +65,7 @@ console.log(miArreglo.reverse());  // Salida: [5, 4, 3, 2, 1]
 
 console.log("C7-Arrays Ejercicio "+ 7 + " -ordenarArray-");
 console.log(ordenarArray([1, 8, 4, 2, 'hola', 6, 'Eje-3',3, 4,])); // funciona con [];
-console.log(ordenarArray([1, 8, 2, 4, 7, 6, 3, 55, ]));
+console.log(ordenarArray([1, 8, 2, 4, 7, 6, 35, 5, ]));
 function ordenarArray(array) {
    // Ordena los elementos del areglo array de menor a mayor.
    // Devuelve el arreglo resultante.
@@ -122,6 +122,13 @@ function obtenerElementoAleatorio(array) {
 };
 
 console.log("C7-Arrays Ejercicio "+ 10 + " -obtenerPrimerStringLargo-");
+function obtenerPrimerStringLargo(array) {
+   // Devuelve el primer string con más de 5 caracteres en el array.
+   // Tu código:
+   
+ }
+
+
 console.log("C7-Arrays Ejercicio "+ 11 + " -duplicarElementos-");
 console.log("C7-Arrays Ejercicio "+ 12 + " -convertirStringAMayusculas-");
 console.log("C7-Arrays Ejercicio "+ 13 + " -filtrarNumerosPares-");
