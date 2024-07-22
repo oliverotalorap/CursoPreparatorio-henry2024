@@ -18,7 +18,8 @@
     /* 2- Las propiedades se pueden escrubir de corrido o
         una debajo de la otra */
     p {
-        color: rgb(225, 29, 29); font-size: 16px;
+        color: rgb(225, 29, 29); 
+        font-size: 16px;
         border: solid 1px green;
     }
     /* 3- Las propiedades representadas por numeros, 

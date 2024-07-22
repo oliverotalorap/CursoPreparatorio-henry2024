@@ -95,41 +95,70 @@ function encontrarElemento(num, array) {
 
 
 console.log("C7-Arrays Ejercicio "+ 8+ "B" + " -arrayContiene-");
-console.log(arrayContiene([1, 2, 'hola', 4, 'dia',16, 'elemento']));
+console.log(arrayContiene([8, "Contiene", 2, 'hola', 4, 'dia',16, 'elemento']));
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código: 
    console.log(array);
    // for(var i = 0; i < array.length; i++){
-   //       if (array[i] === 'elemento'){ };
-   //       //return true;  
-   //       };
+      //       if (array[i] === 'elemento'){ };
+      //       //return true;  
+      //       };
+      
+      var contieneElemento = array.includes("elemento");
+      console.log(contieneElemento);
+      //return contieneElemento;
+      console.log(array.indexOf("elemento"));
+      return array.includes("elemento");
+   };
    
-   var contieneElemento = array.includes("elemento");
-   console.log(contieneElemento);
-   //return contieneElemento;
-   console.log(array.indexOf("elemento"));
-   return array.includes("elemento");
-};
-
-console.log("C7-Arrays Ejercicio "+ 9 + " -obtenerElementoAleatorio-");
-function obtenerElementoAleatorio(array) {
-   // Devuelve un elemento aleatorio del arreglo array.
-   // PISTA: Usa el método Math.random().
-   // Tu código:
-   return math.random(array);
-};
-
-console.log("C7-Arrays Ejercicio "+ 10 + " -obtenerPrimerStringLargo-");
-function obtenerPrimerStringLargo(array) {
-   // Devuelve el primer string con más de 5 caracteres en el array.
-   // Tu código:
+   console.log("C7-Arrays Ejercicio "+ 9 + " -obtenerElementoAleatorio-");
+   console.log(obtenerElementoAleatorio([9, "Aleatorio", 2, 'hola', 4, 'dia',16, 'elemento']));
+   function obtenerElementoAleatorio(array) {
+      // Devuelve un elemento aleatorio del arreglo array.
+      // PISTA: Usa el método Math.random().
+      // Tu código:
+      
+      console.log(array);
+      //return math.random(array);
+   };
    
- }
+   console.log("C7-Arrays Ejercicio "+ 10 + " -obtenerPrimerStringLargo-");
+   console.log(obtenerPrimerStringLargo([10, "tringLrg", 2, 'hola', 4, 'dia', 1, 'elemento']));
+   //console.log(obtenerPrimerStringLargo(["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]));
+   //let array = ["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"];
+   function obtenerPrimerStringLargo(array) {
+      // Devuelve el primer string con más de 5 caracteres en el array.
+      // Tu código:
+      console.log(array); 
+      
+      console.log(array.find(elemento => elemento.length > 5)); 
+      //let obtenerPrimerStringLargo = array.find(elemento => elemento.length > 5);
+      //console.log(obtenerPrimerStringLargo);
+      //return obtenerPrimerStringLargo; 
+   };
+   
+   
+   console.log("C7-Arrays Ejercicio "+ 11 + " -duplicarElementos-");
+   function duplicarElementos(array) {
+      // Duplica (multiplica x2) cada elemento del array de números.
+      // Devuelve un array con los duplicados.
+      // Tu código:
+      console.log(array); 
+      
+      const duplicarElementos = [];
+      for(let i = 0; i < array.length; i++){
+      duplicarElementos.push(array[i] * 2 ) }
+      console.log(duplicarElementos); 
+         
+      //var incremento = array.map(num => num * 2);
+      //console.log(incremento); 
+      //console.log(array.length *2);
+   };
+   console.log(duplicarElementos([3, 5, 2, 5, 6]));
+   
 
-
-console.log("C7-Arrays Ejercicio "+ 11 + " -duplicarElementos-");
 console.log("C7-Arrays Ejercicio "+ 12 + " -convertirStringAMayusculas-");
 console.log("C7-Arrays Ejercicio "+ 13 + " -filtrarNumerosPares-");
 
