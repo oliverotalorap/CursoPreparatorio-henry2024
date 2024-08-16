@@ -1,7 +1,7 @@
 /*4️⃣ EJERCICIO 04 4️⃣*/
 
 // ⛔️ Recuerda que debes utilizar el objeto global "Math".
-
+console.log(1 + " Ejercicio");
 function elevarAlCuadrado(num) {
     // Retorna el valor de "num" elevado al cuadrado.
     // Tu código:
@@ -9,7 +9,7 @@ function elevarAlCuadrado(num) {
     // return elevarAlCuadrado; 
     console.log(elevarAlCuadrado) }
 elevarAlCuadrado(3);
-
+console.log(2 + " Ejercicio");
  function elevarAlCubo(num) {
     // Retorna el valor de "num" elevado al cubo.
     // Tu código:
@@ -18,6 +18,7 @@ elevarAlCuadrado(3);
     console.log(elevarAlCubo) }
 elevarAlCubo(3); 
 
+console.log(3 + " Ejercicio");
  function elevar(num, exponent) {
     // Retorna el valor de "num" elevado al exponente "exponent".
     // Tu código:
@@ -26,15 +27,19 @@ elevarAlCubo(3);
     console.log(elevar); }
 elevar(5,4);
 
+console.log(4 + " Ejercicio");
  function redondearNumero(num) {
     // Redondea "num" al entero más próximo y retórnalo.
     // Tu código:
     var redondearNumero = Math.round(num);
    // return "redondearNumero"; 
-console.log(redondearNumero); }
+   console.log(Math.round(num));
+//console.log(redondearNumero); 
+}
 redondearNumero(3.51);
 redondearNumero(4.49);
 
+console.log(5 + " Ejercicio");
  function redondearHaciaArriba(num) {
     // Redondea "num" hacia arriba y retórnalo.
     // Tu código:

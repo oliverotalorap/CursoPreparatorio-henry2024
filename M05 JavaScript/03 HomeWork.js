@@ -17,8 +17,11 @@ else if(num < 0) {console.log("Es negativo");}
 else if(num === 0) {console.log(false);}
 }
 esPositivo(0);
+esPositivo(2);
+esPositivo(-3);
 
 console.log(2+ "Ejer");
+agregarSimboloExclamacion("Hola mundo");
 function agregarSimboloExclamacion(str) {
     // Agrega un símbolo de exclamación al final del string "str" y retórnalo
     // Ejemplo: "hello world" ---> "hello world!"
@@ -27,15 +30,15 @@ function agregarSimboloExclamacion(str) {
 
     console.log(str + "!");
     console.log((str) + "!");
- }
-agregarSimboloExclamacion("Hola mundo");
+ } 
 
 function combinarNombres(nombre, apellido) {
     // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
     // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
     // Tu código:
-    return nombre + " " + apellido;
     console.log(nombre,  apellido);
+    return nombre + apellido;
+    return nombre + " " + apellido;
     
  }
 console.log(combinarNombres("Oliver", "Porras"));

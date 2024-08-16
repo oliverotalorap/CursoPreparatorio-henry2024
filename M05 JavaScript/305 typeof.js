@@ -15,14 +15,17 @@ console.log(typeof esVerdadero); // "boolean"
 
 console.log("Ejemplo 4: Tipo de objeto")
 let objeto = { nombre: "Juan", edad: 30 };
+console.log(objeto);
 console.log(typeof objeto); // "object"
 
+console.log("Ejemplo 5: Tipo de funcion")
 // Ejemplo 5: Tipo de función
 function saludar() {
     return "Hola!";
 }
 console.log(typeof saludar); // "function"
 
+console.log("Ejemplo 6: Tipo /indefinido")
 // Ejemplo 6: Tipo de indefinido
 let indefinido;
 console.log(typeof indefinido); // "undefined"

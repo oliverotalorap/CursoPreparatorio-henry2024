@@ -119,25 +119,40 @@ function arrayContiene(array, elemento) {
       // Devuelve un elemento aleatorio del arreglo array.
       // PISTA: Usa el método Math.random().
       // Tu código:
-      
-      console.log(array);
-      //return math.random(array);
+            console.log(array);
+            let indiceAleatorio = Math.floor(Math.random() * (array.length));
+            let elementoAleatorio = array[indiceAleatorio];
+            return elementoAleatorio;    
+
+            //return math.random(array);
+            // Explicacion NO ENTIENDO EL EJERCICIO
    };
    
    console.log("C7-Arrays Ejercicio "+ 10 + " -obtenerPrimerStringLargo-");
-   console.log(obtenerPrimerStringLargo([10, "tringLrg", 2, 'hola', 4, 'dia', 1, 'elemento']));
-   //console.log(obtenerPrimerStringLargo(["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]));
+   //console.log(obtenerPrimerStringLargo([10, "tringLrg", 2, 'hola', 4, 'dia', 1, 'elemento']));
    //let array = ["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"];
+   console.log(obtenerPrimerStringLargo(["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]));
    function obtenerPrimerStringLargo(array) {
       // Devuelve el primer string con más de 5 caracteres en el array.
       // Tu código:
-      console.log(array); 
+      console.log(array);
       
-      console.log(array.find(elemento => elemento.length > 5)); 
-      //let obtenerPrimerStringLargo = array.find(elemento => elemento.length > 5);
-      //console.log(obtenerPrimerStringLargo);
-      //return obtenerPrimerStringLargo; 
+      // var largo =array[0];
+      // var palabraMasLarga="";
+      // for (let i =0; i<String.length; i++) 
+      //    if (array[i].length > largo.length)  {
+      //    };
+
+      var nuevo =[]
+      for (var i = 0; i < array.length; i++)
+      if(array[i] > 5){
+         nuevo.push(nuevo[i] > 5)
+      //   nuevo.push(array[i] > 5)
    };
+}
+//return nuevo;
+   //console.log(largo);
+   //console.log(palabraMasLarga);
    
    
    console.log("C7-Arrays Ejercicio "+ 11 + " -duplicarElementos-");
@@ -160,29 +175,47 @@ function arrayContiene(array, elemento) {
    
 
 console.log("C7-Arrays Ejercicio "+ 12 + " -convertirStringAMayusculas-");
-console.log("C7-Arrays Ejercicio "+ 13 + " -filtrarNumerosPares-");
 
+
+console.log("C7-Arrays Ejercicio "+ 13 + " -filtrarNumerosPares-");
+function filtrarNumerosPares(array) {
+   // Devuelve un arreglo solo con los números pares presentes en el array.
+   // Tu código:
+   console.log(array);
+   var nuevo =[];
+    for (var i = 0; i < array.length; i++)
+    if(array[i] % 2 == 0){
+      nuevo.push(array[i])
+    };
+    
+    return nuevo;
+    //return nuevo.length;
+ };
+ console.log(filtrarNumerosPares([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, ]));
+ 
 
 console.log("C7-Arrays Ejercicio "+ 14 + " -contarElementosMayoresA10-");
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo 
    // cuyo valor sea mayor que 18.
    // Tu código:
-   var acumulador = []; //0;
-   for(let i = 0; i < array.length; i++){
-      if(array[i] > 18){
-         acumulador++   //- QUE SIGNIFICA "++"
-      }
-   }
-   console.log(array + " Eje #-14 ");
-   return acumulador; 
+   console.log(array);
+
+   var nuevo =[];
+   for (var i = 0; i < array.length; i++)
+   if(array[i] > 10){
+      nuevo.push(array[i])
+   };
+   console.log(nuevo.length);
+   console.log(nuevo);
+   return nuevo;
 }
-console.log(cuentoElementos([1, 200, 3, 33, 4, 456, 876])); //Funciona con []
+console.log(cuentoElementos([1, 17, 200, 3, 33, 4, 456, 876])); //Funciona con []
 
 
 console.log("C7-Arrays Ejercicio "+ 15 + " -encontrarIndiceMayor-");
-console.log("C7-Arrays Ejercicio "+ 16 + " -multiplicarElementosPorIndice-");
 
+console.log("C7-Arrays Ejercicio "+ 16 + " -multiplicarElementosPorIndice-");
 
 console.log("C7-Arrays Ejercicio "+ 17 + " -agregarNumeros-");
 function agregarNumeros(arrayOfNums) {
@@ -194,6 +227,7 @@ function agregarNumeros(arrayOfNums) {
    for (let i = 0; i < arrayOfNums.length; i++) {
       total = total + arrayOfNums[i];  //suma += arrayOfNums[i];
    }
+   console.log(total);
    return total;
    //var sumaNumeros = arrayOfNums.reduce((num1, num2) => num1 + num2);
    //return sumaNumeros;
@@ -461,11 +495,11 @@ function mayorACien(array) {
    // Tu código:
    //return array.filter(elem => elem > 100);
 
-   var nuevo =[]
+   var nuevo =[];
    for (var i = 0; i < array.length; i++)
    if(array[i] > 100){
       nuevo.push(array[i])
-   }
+   };
    return nuevo;
 }
 console.log(mayorACien([0, 108, 100, 101, 3, 4, 105, 109, 120, 30]));

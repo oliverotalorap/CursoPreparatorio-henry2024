@@ -22,7 +22,8 @@ function viajar(destino) {
     
   function puedeTrabajar(edad) {
     if (edad >= 20) { console.log("si"); } 
-    else { console.log("no"); } } 
+    else { console.log("no"); } 
+  } 
     puedeTrabajar(19);
     puedeTrabajar(21);
     
