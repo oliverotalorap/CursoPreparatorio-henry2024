@@ -5,12 +5,11 @@ function mayorYMenorYPar(num) {
 	else console.log(false); 
   }
   // mayorYMenorYPar(9);
-
   mayorYMenorYPar(7); 
   mayorYMenorYPar(8); 
     
-  // OR
   console.log("Ejercicio-2")
+  // OR
   function operadorOr(str) {
     if (str === 'Henry' || str.length < 2) console.log(true);
     else console.log(false); }
@@ -19,24 +18,23 @@ function mayorYMenorYPar(num) {
       operadorOr('Javascript');
       operadorOr('H');
     
-    
-    // NOT
-    console.log("Ejercicio-3 true and false" + "No entendi")
-    function negacion(permiso) {
-      if (permiso == true) console.log('Tiene permiso');
-      if (permiso == false) console.log('NO Tiene permiso'); 
-    //  else console.log("NO Tiene permiso")
+    //NOT
+    console.log("Ejercicio-3 NOT.")
+    function negacionSalida(salida) {
+      if (!salida ) console.log('Tiene salida'); 
+   
     }
-  //  negacion(true);
-    negacion(false); 
-      
+    negacionSalida("Beto");
+    negacionSalida(false); 
+
   
     console.log("Ejercicio-4 con not")
     function negacion(permiso) {
-      if (permiso) console.log('Tiene permiso'); 
+      if (permiso == true) console.log('Tiene permiso'); 
+      else console.log("No tiene permiso");
     }
-  //  negacion(true);
-  //  negacion(false);
+    negacion(true);
+    negacion("Oliver");
       
 console.log("Ejercicio-5" + " " + "COMPLEJA")
 console.log("Ejercicio-5 COMPLEJA")
@@ -51,14 +49,24 @@ function condicionCompleja(num) {
   condicionCompleja(3);
   
 
-console.log("Ejercicio " + (3 + 1) + " " +"Boolean")
-console.log(3 + 1 + " Ejercicio")
-1           // true
-0           // false
--1          // true
-true        // true
-false       // false
-'string'    // true
-null        // false
-undefined   // false
-// []          // true
+console.log("Ejercicio " + (5 + 1) + " " +"Boolean")
+
+1;            // true
+0;            // false
+-1;           // true
+true;         // true
+false;        // false
+'string'      // true
+null;         // false
+undefined     // false
+Boolean([]);  // true
+// para ejecutarlo desde la terminal git-bash con -node-
+console.log(Boolean(1));
+console.log(Boolean(0));
+console.log(Boolean(-1));
+console.log(Boolean(true));
+console.log(Boolean(false));
+console.log(Boolean('string'));
+console.log(Boolean(null));
+console.log(Boolean(undefined));
+console.log(Boolean([]));
