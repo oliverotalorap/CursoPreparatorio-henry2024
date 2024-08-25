@@ -371,7 +371,7 @@ function doWhile(num) {
   // Retorna el valor final.
   // PISTA: Utiliza el bucle do-while.
   // Tu código:
-  
+
   // var i = 0;
   // do { num = num + 5; i++; } 
   // while (i < 8) 
@@ -402,8 +402,7 @@ while (i < 5) { i++;
 console.log("Bucles C-6 Ejercicio " + " 23 esNumeroPrimo");
 function esNumeroPrimo(numero) {
   // La función recibe un argumento "numero".
-  // Determina si este corresponde a un número primo.
-  // De ser así, retorna true.
+  // Determina si este corresponde a un número primo  // De ser así, retorna true.
   // De lo contrario, retorna false.
   // IMPORTANTE: Recuerda que un número primo es aquel que
   // solo es divisible por sí mismo y por 1.
@@ -412,10 +411,18 @@ function esNumeroPrimo(numero) {
   // Tu código:
 
   //if(numero < 2) return "false";
-  for (var i = 2; i < numero; i++) {
-  if (numero % i === 0) return false;
+//   for (var i = 2; i < numero; i++) {
+//   if (numero % i === 0) return false;
+// }
+// return true;
+
+for (var i = 2; i < numero; i++) {
+  if (numero % i === 0) console.log(false); 
 }
-return true;
+console.log(true);
+}
+esNumeroPrimo(8);
+esNumeroPrimo(11);
 
 // if (numero % 2 === 0) return false;
 // else if (numero % 3 === 0) return false;
@@ -429,11 +436,3 @@ return true;
 //           case numero % 5 == 0: return false; 
 //           case numero % 7 == 0: return false; 
 //           }
-
-for (var i = 2; i < num; i++) {
-  if (num % i === 0) console.log(false); 
-}
-console.log(true);
-}
-esPrimo(8);
-esPrimo(11);
