@@ -26,4 +26,18 @@ function viajar(destino) {
   } 
     puedeTrabajar(19);
     puedeTrabajar(21);
+
+console.log("Ejercio 2 condiconales")
+
+if( true) {console.log("el if dio true"); }
+if( false) {console.log("el if dio true") }
+
+console.log("Ejercio 3 condiconalesCAmilo240826")
+let edad1 = 17;
+let edad2 = 20;
+
+if(edad1 == edad2) console.log("el if dio true")
+  else if(edad1 < edad2) console.log("a estudiar")
+  else {console.log("el if dio false")}
+
     

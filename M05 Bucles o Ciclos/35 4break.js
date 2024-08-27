@@ -1,25 +1,26 @@
 console.log("Ejercicio " + ("1A") +" whilw-Break" );
+comprobarBreak(1);
 function comprobarBreak(x) {
 var i = 0;
    while (i < 6) { if (i == 3) break;
-       i++;
+      i++;
    }
+
     console.log( i * x);
    // return i * x;
  }
- comprobarBreak(1);
 
 console.log("Ejercicio " + ("2B") +" whilw-Break" );
 comprobarBreakRomper(1);
 //comprobarBreakRomper(2);
 function comprobarBreakRomper(x) {
-var e = 0;
-var t = 0;
-   while (e < 10) { e++;
-    if (e == 5) break;
+   var t = 0;
+   var e = 0;
+   while (e < 10) { if (e == 5) break;
+      e++;
    }
-   t+= e;
-    console.log( e * x + " Variable iter");
+   t+= e;      //t+=e; NO entiendo 
+   console.log( e * x + " Variable iter");
    // return e * x;
 }
 //console.log(t + " Variable suma")

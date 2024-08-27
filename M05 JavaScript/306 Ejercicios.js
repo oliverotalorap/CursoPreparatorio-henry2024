@@ -3,6 +3,7 @@ console.log("JavaScript C-6 Ejercicio " + " 1 nuevoString");
 // Reemplaza el valor de null por el correspondiente.
 
 const nuevoString = "palabraEntreComillas";
+console.log(nuevoString);
 {}
 
 console.log("JavaScript C-6 Ejercicio " + " 2 nuevoNumero");
@@ -10,6 +11,7 @@ console.log("JavaScript C-6 Ejercicio " + " 2 nuevoNumero");
 // Reemplaza el valor de null por el correspondiente.
 
 const nuevoNumero = 22;
+console.log(nuevoNumero);
 // number o numero
 {}
 
@@ -18,6 +20,7 @@ console.log("JavaScript C-6 Ejercicio " + " 3 nuevoBooleleano");
 // Reemplaza el valor de null por el correspondiente.
 
 const nuevoBoolean = true;
+console.log(nuevoBoolean);
 // boolean: false o true.
 {}
 
@@ -25,9 +28,10 @@ console.log("JavaScript C-6 Ejercicio " + " 4 nuevaResta");
 // Resuelve el siguiente problema matemático.
 // Reemplaza el valor de null por el correspondiente.
 
-const nuevaResta = 10 - 7 === 3;
-// resta
+const nuevaResta = 10 - 7 == 3;
 
+console.log(nuevaResta);  
+console.log(10 - 7);
 nuevaResta;
 {}
 
@@ -35,9 +39,10 @@ console.log("JavaScript C-6 Ejercicio " + " 5 nuevaMultiplicacion");
 // Resuelve el siguiente problema matemático.
 // Reemplaza el valor de null por el correspondiente.
 
-const nuevaMultiplicacion = 10 * 4 === 40;
+const nuevaMultiplicacion = 10 * 4 == 40;
 // miltiplicacion.
-
+console.log(10 * 4);
+console.log(nuevaMultiplicacion);
 nuevaMultiplicacion;
 {}
 
@@ -46,8 +51,9 @@ console.log("JavaScript C-6 Ejercicio " + " 6 resto o nuevoModulo");
 // Reemplaza el valor de null por el correspondiente.
 
 const nuevoModulo = 21 % 5 === 1;
+console.log(21 % 5);
+console.log(nuevoModulo);
 //resto o sobrante de una divicion
-nuevoModulo;
 {}
 
 console.log("JavaScript C-6 Ejercicio " + " 7 esTipoDato");
@@ -57,12 +63,17 @@ function esTipoDato(valor) {
     // Por ejemplo: "string", "number", "boolean", "object", etc.
     // Tu código:
     
-    let tipoDato = typeof valor;
-    return tipoDato;
-    return typeof valor;
-     //return valor.EsUnString;
+    console.log(typeof valor);
+        // return typeof valor;
+    // let tipoDato = typeof valor;
+    // return tipoDato;
+    
   }
-  esTipoDato;
+  esTipoDato( "string");
+  esTipoDato( 46);
+  esTipoDato( true);
+  esTipoDato( );
+
 
 console.log("JavaScript C-6 Ejercicio " + " 8 esNumeroEntero");
 function esNumeroEntero(numero) {
@@ -74,17 +85,21 @@ function esNumeroEntero(numero) {
     // -1212 ---> true 
     // 121.212 ---> false 
     // Tu código:
-      
-    return Number.isInteger(numero);
-    //return numero.isInteger();
+      console.log(numero);
+
+    console.log(Number.isInteger(numero));
+    // return Number.isInteger(numero);
+    // //return numero.isInteger();
     
-    let resultado = Number.isInteger(numero);
-    return resultado;
-    
-    if(numero % 1 == 0) return true; 
-    else return false;
+    // let resultado = Number.isInteger(numero);
+    // return resultado;
+
+    // if(numero % 1 == 0) return true; 
+    // else return false;
 }
-esNumeroEntero;
+esNumeroEntero(5);
+esNumeroEntero(-5);
+esNumeroEntero(5.5);
 
 console.log("JavaScript C-6 Ejercicio " + " 9 esNuloOIndefinido");
 function esNuloOIndefinido(valor) {
@@ -97,12 +112,20 @@ function esNuloOIndefinido(valor) {
     // 22 ---> false
     // "texto" ---> false
     // Tu código:
-  
-    if(valor == null){ return true; }
-    else if (valor == undefined){ return True;} 
-    else return false;
+    console.log(valor);
+
+    if(valor == null){ console.log(true); }
+    else if (valor == undefined){console.log(True);} 
+    else console.log(false);
+
+    // if(valor == null){ return true; }
+    // else if (valor == undefined){ return True;} 
+    // else return false;
 };
-esNuloOIndefinido;
+esNuloOIndefinido(null);
+esNuloOIndefinido( );
+esNuloOIndefinido( 46);
+esNuloOIndefinido("palabra");
 
 console.log("JavaScript C-6 Ejercicio " + " 10 devolverString");
 function devolverString(string) {
@@ -114,11 +137,12 @@ function devolverString(string) {
     // "SoyHenry" ---> "SoyHenry" 
     // Tu código:
    
+    console.log(string);
     return string;
 }
-devolverString;
+devolverString("stringOPalabra");
 
-console.log("JavaScript C-6 Ejercicio " + " 11 ");
+console.log("JavaScript C-6 Ejercicio " + " 11 sonIguales");
 function sonIguales(x, y) {
     // La función recibe dos argumentos llamados "x" e "y".
     // Retorna true si "x" e "y" son iguales.
@@ -128,14 +152,18 @@ function sonIguales(x, y) {
     // 5, 8 ---> false 
     // Tu código:
   
-    if( x == y){
-      return true;
-     }
+    if( x == y){console.log(true); }
+     else console.log(false);
+
+    if( x == y){ return true; }
      else return false;
 }
-sonIguales;
+sonIguales(5, 5);
+sonIguales("Hola", "Hola");
+sonIguales(5, 4);
+sonIguales("Hola", "Hello");
 
-console.log("JavaScript C-6 Ejercicio " + " 12 ");
+console.log("JavaScript C-6 Ejercicio " + " 12 tienenMismaLongitud");
 function tienenMismaLongitud(str1, str2) {
     // La función recibe dos argumentos llamados "str1" y "str2" que son strings.
     // Retorna true si los dos strings tienen la misma longitud.
@@ -144,13 +172,19 @@ function tienenMismaLongitud(str1, str2) {
     // "SoyHenry", "HenrySoy" ---> true 
     // "hi", "there" ---> false 
     // Tu código:
-  
-    if(str1.length == str2.length)     return true;
-      else return false;
-}
-tienenMismaLongitud;
+  console.log(str1, str2);
+  console.log(str1 == str2);
 
-console.log("JavaScript C-6 Ejercicio " + " 13 ");
+    if(str1.length == str2.length) console.log(true);
+    else console.log(false);
+
+    if(str1.length == str2.length) return true;
+    else return false;
+}
+//tienenMismaLongitud("toro", "buey");
+tienenMismaLongitud(123, 456);
+
+console.log("JavaScript C-6 Ejercicio " + " 13 menosQueNoventa");
 function menosQueNoventa(num) {
     // La función recibe un argumento llamado num.
     // Retorna true si el argumento "num" es menor que noventa.
@@ -170,7 +204,7 @@ function menosQueNoventa(num) {
 }
 menosQueNoventa;
 
-console.log("JavaScript C-6 Ejercicio " + " 14 ");
+console.log("JavaScript C-6 Ejercicio " + " 14 mayorQueCincuenta");
 function mayorQueCincuenta(num) {
     // La función recibe un argumento llamado num.
     // Retorna true si el argumento "num" es mayor que cincuenta.
@@ -188,7 +222,7 @@ function mayorQueCincuenta(num) {
 }
 mayorQueCincuenta;
 
-console.log("JavaScript C-6 Ejercicio " + " 15 ");
+console.log("JavaScript C-6 Ejercicio " + " 15 esPar");
 function esPar(num) {
     // La función recibe un argumento llamado num.
     // Retorna true si el argumento "num" es par.
@@ -205,7 +239,7 @@ function esPar(num) {
 }
 esPar;
 
-console.log("JavaScript C-6 Ejercicio " + " 16 ");
+console.log("JavaScript C-6 Ejercicio " + " 16 esImpar");
 function esImpar(num) {
     // La función recibe un argumento llamado num.
     // Retorna true si el argumento "num" es impar.
@@ -222,7 +256,7 @@ function esImpar(num) {
 }
 esImpar;
 
-console.log("JavaScript C-6 Ejercicio " + " 17 ");
+console.log("JavaScript C-6 Ejercicio " + " 17 esPositivo");
 function esPositivo(num) {
     // La función recibe un argumento llamado num el cual es un numero entero.
     // Retorna como resultado un string que indica si el número es positivo o negativo.
@@ -237,7 +271,7 @@ function esPositivo(num) {
 }
 esPositivo;
 
-console.log("JavaScript C-6 Ejercicio " + " 18 ");
+console.log("JavaScript C-6 Ejercicio " + " 18 esVocal");
 function esVocal(letra) {
     // La función recibe un argumento llamado letra el cual es un string.
     // Retorna como resultado un string que indica si el argumento letra es una vocal.
@@ -256,7 +290,7 @@ function esVocal(letra) {
 }
 esVocal;
 
-console.log("JavaScript C-6 Ejercicio " + " 19 ");
+console.log("JavaScript C-6 Ejercicio " + " 19 suma");
 function suma(x, y) {
     // La función recibe dos argumentos llamados "x" e "y" que son números.
     // Retorna el resultado de la suma de estos argumentos.
@@ -268,7 +302,7 @@ function suma(x, y) {
 }
 suma; 
 
-console.log("JavaScript C-6 Ejercicio " + " 20 ");
+console.log("JavaScript C-6 Ejercicio " + " 20 resta");
 function resta(x, y) {
     // La función recibe dos argumentos llamados "x" e "y" que son números.
     // Retorna el resultado de la resta de estos argumentos.
@@ -280,7 +314,7 @@ function resta(x, y) {
 }
 resta;
 
-console.log("JavaScript C-6 Ejercicio " + " 21 ");
+console.log("JavaScript C-6 Ejercicio " + " 21 multiplicacion");
 function multiplica(x, y) {
     // La función recibe dos argumentos llamados "x" e "y" que son números.
     // Retorna el resultado de la multiplicacion de estos argumentos.
@@ -293,7 +327,7 @@ function multiplica(x, y) {
 }
 multiplica;
 
-console.log("JavaScript C-6 Ejercicio " + " 22 ");
+console.log("JavaScript C-6 Ejercicio " + " 22 divicion");
 function divide(x, y) {
     // La función recibe dos argumentos llamados "x" e "y" que son números.
     // Retorna el resultado de la division de estos argumentos.
@@ -305,7 +339,7 @@ function divide(x, y) {
 }
 divide;
 
-console.log("JavaScript C-6 Ejercicio " + " 23 ");
+console.log("JavaScript C-6 Ejercicio " + " 23 obtenerResto");
 function obtenerResto(x, y) {
     // La función recibe dos argumentos llamados "x" e "y" que son números.
     // Retorna el resultado del resto de la division de estos argumentos.
@@ -317,7 +351,7 @@ function obtenerResto(x, y) {
 }
 obtenerResto;
 
-console.log("JavaScript C-6 Ejercicio " + " 24 ");
+console.log("JavaScript C-6 Ejercicio " + " 24 agregarSimboloExclam");
 function agregarSimboloExclamacion(str) {
     // La función recibe un argumento llamado str el cual es un string.
     // Agrega un símbolo de exclamación al final del string str y retórnalo.
@@ -328,7 +362,7 @@ function agregarSimboloExclamacion(str) {
 }
 agregarSimboloExclamacion;
 
-console.log("JavaScript C-6 Ejercicio " + " 25 ");
+console.log("JavaScript C-6 Ejercicio " + " 25 combinarNombre");
 function combinarNombres(nombre, apellido) {
     // La función recibe dos argumentos llamados "nombre" y "apellido" los cuales son string.
     // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
@@ -340,7 +374,7 @@ function combinarNombres(nombre, apellido) {
 }
 combinarNombres;
 
-console.log("JavaScript C-6 Ejercicio " + " 26 ");
+console.log("JavaScript C-6 Ejercicio " + " 26 obtenerSaludo");
 function obtenerSaludo(nombre) {
     // La función recibe un argumento llamado nombre el cual es un string. 
     // Toma el string "nombre" y concatena otros string en la cadena para que tome la siguiente forma:
@@ -353,7 +387,7 @@ function obtenerSaludo(nombre) {
 }
 obtenerSaludo;
 
-console.log("JavaScript C-6 Ejercicio " + " 27 ");
+console.log("JavaScript C-6 Ejercicio " + " 27 obtenerAresRectangulo");
 function obtenerAreaRectangulo(alto, ancho) {
     // La función recibe dos argumentos llamados "alto" y "ancho" los cuales son numeros.
     // Retornar el área de un rectángulo teniendo su alto y ancho.
@@ -366,7 +400,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 }
 obtenerAreaRectangulo;
 
-console.log("JavaScript C-6 Ejercicio " + " 28 ");
+console.log("JavaScript C-6 Ejercicio " + " 28 retornarPerimeto");
 function retornarPerimetro(lado) {
     // La función recibe un argumento llamado lado el cual es un numero.
     // Retornar el perimetro de un cuadrado.
@@ -379,7 +413,7 @@ function retornarPerimetro(lado) {
 }
 retornarPerimetro;
 
-console.log("JavaScript C-6 Ejercicio " + " 29 ");
+console.log("JavaScript C-6 Ejercicio " + " 29 areaDelTriangulo");
 function areaDelTriangulo(base, altura) {
     // La función recibe dos argumentos llamados "base" y "altura" los cuales son numeros.
     // Retornar el área de un triangulo teniendo su base y altura.
@@ -393,7 +427,7 @@ function areaDelTriangulo(base, altura) {
 }
 areaDelTriangulo;
 
-console.log("JavaScript C-6 Ejercicio " + " 30 ");
+console.log("JavaScript C-6 Ejercicio " + " 30 deEuroAdolar");
 function deEuroAdolar(euro) {
     // La función recibe un argumento llamado euro el cual es un numero.
     // Debes calcular el valor recibido como argumento pasándolo a dólares.
@@ -408,7 +442,7 @@ function deEuroAdolar(euro) {
 }
 deEuroAdolar;
 
-console.log("JavaScript C-6 Ejercicio " + " 31 ");
+console.log("JavaScript C-6 Ejercicio " + " 31 elevarAlCuadrado");
 // ⛔️ Recuerda que debes utilizar el objeto global "Math".
 
 function elevarAlCuadrado(num) {
@@ -424,7 +458,7 @@ function elevarAlCuadrado(num) {
   // ⛔️ Recuerda que debes utilizar el objeto global "Math".
   module.exports = elevarAlCuadrado;
 
-console.log("JavaScript C-6 Ejercicio " + " 32 ");
+console.log("JavaScript C-6 Ejercicio " + " 32 elevarAlCubo");
 // ⛔️ Recuerda que debes utilizar el objeto global "Math".
 
 function elevarAlCubo(num) {
@@ -440,7 +474,7 @@ function elevarAlCubo(num) {
 }
 elevarAlCubo;
 
-console.log("JavaScript C-6 Ejercicio " + " 33 ");
+console.log("JavaScript C-6 Ejercicio " + " 33 elevar");
 // ⛔️ Recuerda que debes utilizar el objeto global "Math".
 
 function elevar(num, exponent) {
@@ -455,7 +489,7 @@ function elevar(num, exponent) {
 }
 elevar;
 
-console.log("JavaScript C-6 Ejercicio " + " 34 ");
+console.log("JavaScript C-6 Ejercicio " + " 34 redondearNumero");
 // ⛔️ Recuerda que debes utilizar el objeto global "Math".
 
 function redondearNumero(num) {
@@ -470,7 +504,7 @@ function redondearNumero(num) {
 }
 redondearNumero;
 
-console.log("JavaScript C-6 Ejercicio " + " 35 ");
+console.log("JavaScript C-6 Ejercicio " + " 35 redondearHaciaArriba");
 // ⛔️ Recuerda que debes utilizar el objeto global "Math".
 
 function redondearHaciaArriba(num) {
@@ -485,7 +519,7 @@ function redondearHaciaArriba(num) {
 }
 redondearHaciaArriba;
 
-console.log("JavaScript C-6 Ejercicio " + " 36 ");
+console.log("JavaScript C-6 Ejercicio " + " 36 numeroRandom");
 // ⛔️ Recuerda que debes utilizar el objeto global "Math".
 
 function numeroRandom() {

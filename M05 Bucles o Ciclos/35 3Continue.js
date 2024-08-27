@@ -1,31 +1,44 @@
 console.log("Ejercicio " + (0.5 + 0.5) +" Continue" );
+//let result = '';    //muestra cuantas iteraciones realizo
+//let e = 0;
+//let n = 0;
+let n = "";
 let i = 0;
-let n = 0;
 while (i < 5) { i++;
    if (i == 3) continue;   // la funcion salta al llegar al 3
    n += i;
-console.log(i + " Variable iter");
+console.log( i );
+//console.log(i + " Variable iter");
 }
 console.log(n + " Varible suma");
 console.log(i + " Variable iter T-Pasos");
 
-console.log("Ejercicio " + (1 +0.5) +" Continue" );
-var e = 0;
+console.log("Ejercicio " + (1 +" A") +" DoWhile /HacerMientras" );
+//let result = 0;   //suma el total de las iteraciones
+let result = '';    //muestra cuantas iteraciones realizo
+let e = 0;
+do { e = e + 1; result = result + e;
+} while (e <= 8);
+console.log(result); // Expected output: "12345"
+  
+
+console.log("Ejercicio " + (1 + 1) +" Continue con: !=,|| y &&" );
+var u = 0;
 var t = 0;
-while (e < 10) { e++; 
-  if (e == 5) continue;
-  //  if (e == 10) continue;
-  //  if (e != 5) continue;
-  //  if (!e == 5) continue; // no aplica
-  //  if (e == 5 || e == 10) continue;
-  //  if (e == 5 && e == 10) continue; // no aplica
-  //  if (e != 5 || e != 10) continue; // no aplica
-  //  if (e != 5 && e != 10) continue;
-  t += e;
-  console.log(e + " Variable iter");
+while (u < 10) { u++; 
+  if ( u== 5) continue;
+  //  if (u == 10) continue;
+  //  if (u != 5) continue;
+  //  if (!u == 5) continue; // no aplica
+  //  if (u == 5 || u == 10) continue;
+  //  if (u == 5 && u == 10) continue; // no aplica
+  //  if (u != 5 || u != 10) continue; // no aplica
+  //  if (u != 5 && u != 10) continue;
+  t += u;
+  console.log(u + " Variable iter");
 }
 console.log(t + " Varible suma");
-console.log(e + " Variable iter T-Pasos");
+console.log(u + " Variable iter T-Pasos");
 
 console.log("Ejercicio " + ("2A") +" Etiqueta checkiand" );
 checkiandj: while (i < 4) {

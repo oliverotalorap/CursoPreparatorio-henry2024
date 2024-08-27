@@ -1,25 +1,24 @@
 console.log("Ejercicio " + (1 +" A") +" DoWhile /HacerMientras" );
-
-let result = '';
+//let result = 0;   //suma el total de las iteraciones
+let result = '';    //muestra cuantas iteraciones realizo
 let e = 0;
 do { e = e + 1; result = result + e;
 } while (e <= 8);
 console.log(result); // Expected output: "12345"
 
 console.log("Ejercicio " + (1 +" B") +" DoWhile /HacerMientras" );
-
 //let result = '';
 //let result = "";
-var i = 0;
 let resultado = 0;
+var i = 0;
 //do { i = i + 1;  result = result + i +" "; }
 do { i = i + 1; 
   resultado = resultado + i; 
   console.log(i + "  Variable de iteracion");
 }
 while (i<=8);
-console.log(i + "  Variable de iteracion T-Pasos");
 console.log(resultado + "  Variable suma"); // Expected output: "12345"
+console.log(i + "  Variable de iteracion T-Pasos");
 
 
 // do.  sentencia;      while.  (condición);
