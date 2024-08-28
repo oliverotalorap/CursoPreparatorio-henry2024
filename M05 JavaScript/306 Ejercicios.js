@@ -174,7 +174,7 @@ function tienenMismaLongitud(str1, str2) {
     // Tu código:
   console.log(str1, str2);
   console.log(str1 == str2);
-
+36
     if(str1.length == str2.length) console.log(true);
     else console.log(false);
 

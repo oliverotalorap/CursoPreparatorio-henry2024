@@ -1,3 +1,28 @@
+console.log("Ejercicio A  Bucle while");
+var i = 1;
+while(i < 1) { console.log(i); i= i+1;
+};
+
+console.log("Ejercicio B  Bucle do-while");
+var i = 1;
+do{ console.log(i); i++;
+} while(i < 1);
+
+// con do{} while(i<1); el codigo se ejecuta minino 1ves.
+console.log("Ejercicio A-2  Bucle while");
+var i = 1;
+while(i < 10) { 
+  console.log(i); 
+  i= i+1;
+};
+
+console.log("Ejercicio B-2  Bucle do-while");
+var i = 0;
+do{ console.log(i); 
+  i++;
+} while(i <= 10);
+
+  
 console.log("Ejercicio " + (1 +" A") +" DoWhile /HacerMientras" );
 //let result = 0;   //suma el total de las iteraciones
 let result = '';    //muestra cuantas iteraciones realizo

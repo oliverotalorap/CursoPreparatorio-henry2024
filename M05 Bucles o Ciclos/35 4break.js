@@ -1,3 +1,18 @@
+console.log("Ejercicio A Break en bucle-for" );
+for (let i = 0; i<= 20; i++) {
+   if (i == 12){ break;
+   }
+   console.log(i);
+}
+console.log("Ejercicio A Break en bucle-for" );
+for (let i = 0; i<= 20; i++) {
+   if (i == 12){ continue;
+      if (i == 15){ break;}  // no lo resibe
+   }
+   console.log(i);
+}
+
+
 console.log("Ejercicio " + ("1A") +" whilw-Break" );
 comprobarBreak(1);
 function comprobarBreak(x) {
