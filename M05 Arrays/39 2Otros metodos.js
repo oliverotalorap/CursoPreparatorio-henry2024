@@ -3,7 +3,11 @@ var palabra = "henri";
 var palabraSeparada = palabra.split("");
 palabraSeparada.pop();
 palabraSeparada.push("y");
+var palabraArreglada = palabraSeparada.join(" ");
 var palabraArreglada = palabraSeparada.join("");
+var palabraArreglada = palabraSeparada.join('&');
+var palabraArreglada = palabraSeparada.join("-");
+
 console.log(palabra);
 console.log(palabraSeparada);
 console.log(palabraArreglada);
