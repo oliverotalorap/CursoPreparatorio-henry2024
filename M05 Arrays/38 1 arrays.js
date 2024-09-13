@@ -1,10 +1,94 @@
 // Lista de compras
+console.log("Ejercicio 1 Arreglos Ejem-verduras")
+var listaDeCompras = [];
+listaDeCompras[1] = 'Lechuga';
+listaDeCompras[4] = 'cebolla';
+listaDeCompras[2] = 'ajo';
+//listaDeCompras[3] = "Tomates";
+listaDeCompras[0] = "pepino";
+listaDeCompras[5] = 'Platano';
+
+console.log(listaDeCompras.length);
+console.log(listaDeCompras[3]);
+ console.log(listaDeCompras);
+// var elementosDelArrays = listaDeCompras[0, 1, 2 ];
+// console.log(elementosDelArrays);
+
+
+console.log("Ejercicio " + (1+1) + " Nombres Metodos -incledes y lenght-"  ) 
+// Lenght
+var nombres = ['Anyi', 'Beto', 'Carlos', 'Dany', "Edwin"]
+console.log(nombres);
+console.log(nombres.length);
+console.log(nombres.includes("Beto"))
+
+console.log("Ejercicio " + (1+2) + " Numeros y every"  ) 
+var numeros = [  4, 5, 6,];
+console.log(numeros);
+var cumpleCondicion = numeros.every((num) => {
+    return num > 4; 
+    //return num >= 4;
+} 
+)
+console.log(cumpleCondicion);
+
+console.log("Ejercicio " + 4 + " NUMEROS REVERSE"  ) 
+let miArreglo = [1, 2, 3, 4, 5, 6,];
+//var miArregloInvertido = miArreglo.reverse();
+
+console.log(miArreglo);             // Salida: [1, 2, 3, 4, 5,...]
+console.log(miArreglo.reverse());   // Salida: [.., 5, 4, 3, 2, 1]
+//console.log(miArregloInvertido);    // Salida: [..., 5, 4, 3, 2, 1]
+
+//Ejercicios
+//console.log( (2+2) *4)
+
+console.log("Ejercicio " + 5 + " Nombres y length"  ) 
+// Lenght
+var nombres = ['Matias', 'Maria', 'Diego', 'Rosa'].length;
+console.log(nombres);
+//console.log(nombres.length);
+
+
+console.log("Ejercico 6 split y join.");
+// SPLIT
+var palabra = 'Henri';
+console.log(palabra);
+
+var palabraSeparada = palabra.split('');
+console.log(palabraSeparada);
+
+//palabraSeparada.pop();
+console.log(palabraSeparada.pop());
+palabraSeparada.push('y');
+var palabraArreglada = palabraSeparada.join('');
+console.log(palabraArreglada);
+
+
+console.log("Ejercicio 7 forEach y map.");
+var numeros = [1, 2, 3, 4, 5];
+console.log(numeros[0]);
+console.log(numeros[4]);
+console.log(numeros);
+
+numeros.forEach(num => console.log(num));
+numeros.forEach(num => {if (num == 3) (console.log(num))
+    else (console.log("No esta el numero"))
+});
+
+var numerosmap = numeros.map((num) => {return num + 2});
+console.log(numerosmap);
+var numerosmap = numeros.map((num) => {console.log(num + 2)});
+
+// Del 1 al 7 Ejercicios Henrry Modulo-7 Array
+// del A-1 al H-8 Ejerccicios de practica del ..?
+
 console.log("Ejercicio A-1 clases de Arrays" )
 let arreglo1 =[];        //arreglo Basio
 let arreglo2 =[123, 456,789, -100];
 let arreglo3 =["hola", "mundo", "feliz", "dia", true, 2024];
 
-console.log(arreglo3[5]);
+console.log(arreglo3[3]);
 console.log(arreglo3[8]);
 console.log(arreglo3.length + " indises");
 console.log(arreglo3);
@@ -16,18 +100,21 @@ for(let i = 0; i< arreglo3.length; i++)
     console.log(arreglo3[i]);
 console.log(arreglo3.length + " indises");
 
-console.log("Ejercicio B-2 resultadoSplit")
+
+
+console.log("Ejercicio B-2 resultado Split")
 //let resultadoSplit = "Ejemplo tomamos una palabra".split();
-let resultadoSplit = "Ejemplo tomamos una palabra".split("");
+let resultadoSplit = "Ejemplo tomamos una palabra"; // .split("");
 console.log(resultadoSplit);
+console.log(resultadoSplit.split(" "));
 
 
-
-console.log("Ejercicio C-3 Split con bucle for")
+console.log("Ejercicio C-3.     -bucle for")
 let arreglo4 =["hola", "mundo", "feliz", "dia", true, 2024];
 for(let i = 0; i< arreglo4.length; i++)
     console.log(arreglo4[i]);
 console.log(arreglo4.length + " indises");
+console.log(arreglo4);
 
 
 //funciones de colbank
@@ -81,45 +168,3 @@ console.log("callbank-reduce"+" "+"pasa a 38 1Array reduce")
 
 
 
-
-
-console.log("Ejercicio 1 Arreglos Ejem-verduras")
-var listaDeCompras = [];
-listaDeCompras[1] = 'Lechuga';
-listaDeCompras[4] = 'cebolla';
-listaDeCompras[2] = 'ajo';
-//listaDeCompras[3] = "Tomates";
-listaDeCompras[0] = "pepino";
-listaDeCompras[5] = 'Platano';
-
-console.log(listaDeCompras.length);
-console.log(listaDeCompras[ 3 ]);
- console.log(listaDeCompras);
-// var elementosDelArrays = listaDeCompras[0, 1, 2 ];
-// console.log(elementosDelArrays);
-
-console.log("Ejercicio " + (1+1) + " Nombres Metodos -incledes-"  ) 
-// Lenght
-var nombres = ['Anyi', 'Beto', 'Carlos', 'Dany', "Edwin"]
-console.log(nombres);
-console.log(nombres.length);
-console.log(nombres.includes("Beto"))
-
-console.log("Ejercicio " + (1+2) + " NUMEROS EVERY"  ) 
-var numeros = [  4, 5, 6,];
-console.log(numeros);
-var cumpleCondicion = numeros.every((num) => {
-    return num >= 4; } 
-)
-console.log(cumpleCondicion);
-
-console.log("Ejercicio " + (1+2) + "NUMEROS REVERSE"  ) 
-let miArreglo = [1, 2, 3, 4, 5, 6,];
-var miArregloInvertido = miArreglo.reverse();
-
-console.log(miArreglo);  // Salida: [1, 2, 3, 4, 5,...]
-console.log(miArreglo.reverse());  // Salida: [.., 5, 4, 3, 2, 1]
-console.log(miArregloInvertido);  // Salida: [..., 5, 4, 3, 2, 1]
-
-//Ejercicios
-console.log( (2+2) *4)

@@ -45,32 +45,8 @@ numeros.shift();
 console.log(numeros);
 
 
-console.log("Ejercico 4 split y join.");
-// SPLIT
-var palabra = 'Henri';
-console.log(palabra);
-
-var palabraSeparada = palabra.split('');
-console.log(palabraSeparada);
-
-palabraSeparada.pop();
-palabraSeparada.push('y');
-var palabraArreglada = palabraSeparada.join('');
-console.log(palabraArreglada);
-
-
-console.log("Ejercicio 5 forEach y map.");
-var numeros = [1, 2, 3, 4, 5];
-console.log(numeros);
-numeros.forEach(num => console.log(num));
-numeros.forEach(num => {if (num == 3) (console.log(num))});
-
-var numerosmap = numeros.map(( num ) => {return num + 2});
-console.log(numerosmap);
-
 // //console.log(masUno);
 
 //console.log(masUno);
 // var cumplenCondicion = numeros.every(( num ) => {return num > 5});
 // console.log(cumplenCondicion);
-
