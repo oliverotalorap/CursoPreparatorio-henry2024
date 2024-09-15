@@ -4,7 +4,7 @@ function devolverPrimerElemento(array) {
    // Tu código:
    return array[0];
 }
-console.log(devolverPrimerElemento([2, 3, 4, 5, 6,'uno', 33, 7]));
+console.log(devolverPrimerElemento([2, 3, 4, 5, 6,'uno', 7]));
 
 
 console.log("C7-Arrays Ejercicio 02"+ " devolverUltimoElemento");
@@ -16,7 +16,7 @@ function devolverUltimoElemento(array) {
    const ultimoElemento = array.length -1;
    return array[ultimoElemento];
 }
-console.log(devolverUltimoElemento([1, 2, 3, 4, 5, 6, 22, "Edison"]));
+console.log(devolverUltimoElemento([1, 2, 3, 4, 22, "Edison"]));
 
 
 console.log("C7-Arrays Ejercicio 03"+ " obtenerLargoDelArray" );
@@ -35,83 +35,101 @@ function agregarItemAlFinalDelArray(array, elemento) {
    // Retorna el arreglo.
    // Tu código:
    console.log(array);
-   array.push('elemento', elemento, 'ocho');
+   //console.log(array.push('elemento', 'ElementoF'));// 
+   array.push('elemento', 'ElementoF');
+   console.log(array);
    return array;
 }
 console.log(agregarItemAlFinalDelArray([1, 2, 3 , 4, 'dia']));
 
 
-console.log("C7-Arrays Ejercicio "+ 5," agregrItem");
+console.log("C7-Arrays Ejercicio "+ 5," agregarItemAlComienzotem");
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
    console.log(array);
    array.unshift("elementoInicio"); 
+   console.log(array);
    return array;
 }
-//agregarItemAlComienzoDelArray([4, 5, 'seis']);            //estudiar el pq;
-console.log(agregarItemAlComienzoDelArray([4, 5, 'seis']));
+agregarItemAlComienzoDelArray([4, 5, 'seis']);            //estudiar el pq;
+//console.log(agregarItemAlComienzoDelArray([4, 5, 'seis']));
 
 
 console.log("C7-Arrays Ejercicio "+ 6 + " -invertirArray-");
-let miArreglo = [1, 2, 3, 4, 5, 6, ];
-//var miArregloInvertido = miArreglo.reverse();
-
-console.log(miArreglo);  // Salida: [1, 2, 3, 4, 5,]
-console.log(miArreglo.reverse());  // Salida: [5, 4, 3, 2, 1]
-//console.log(miArregloInvertido);  // Salida: [5, 4, 3, 2, 1]
-
+function invertirArray(array) {
+   // Invierte el arreglo array recibido por argumento.
+   // Tu código:
+   //let nvertirArray = [1, 2, 3, 4, 5, 6, 7,];
+   
+   console.log(array);  // Salida: [1, 2, 3, 4, 5, 6, 7]
+   console.log(array.reverse());  // Salida: [7, 6, 5, 4, 3, 2, 1]
+};
+invertirArray(array = [1, 2, 3, 4, 5, 6, 7]);  
+invertirArray(array = (["uno", "dos", "tres", "cinco"]));  
+//invertirArray([1, 2, 3, 4, 5, 6, 7]);  
 
 console.log("C7-Arrays Ejercicio "+ 7 + " -ordenarArray-");
-console.log(ordenarArray([1, 8, 4, 2, 'hola', 6, 'Eje-3',3, 4,])); // funciona con [];
-console.log(ordenarArray([1, 8, 2, 4, 7, 6, 35, 5, ]));
+//console.log(ordenarArray([24, 8, 234, 4, 2, 'hola', 6, 'Eje',3, 4,])); 
+//ordenarArray([24, 8, 234, 4, 2, 'hola', 6, 'Eje',3, 4,]); // funciona con [];
+ordenarArray(array = [24, 8, 234, 4, 2, 'hola', 6, 'Eje',3, 4,]); // funciona con [];
+//console.log(ordenarArray([1, 8, 2, 4, 3, 345, 6, 35, 5, ]));
+//ordenarArray(array = [1, 8, 2, 4, 3, 345, 6, 35, 5, ]);
 function ordenarArray(array) {
    // Ordena los elementos del areglo array de menor a mayor.
    // Devuelve el arreglo resultante.
    // Tu código:
    console.log(array);
-   return array.sort();
+   console.log(array.sort());
+   //return array.sort();    //NO LO RETORNA
+
+   //console.log(array.sort(function(a, b) {return a-b })); //En una 2 lineas de codigo.-
+   array.sort(function(a, b) {return a-b });
+   console.log(array);
+   //console.log(array.sort(function(a, b) {console.log(a-b) })); //NO FUNCIONA DESCARTADA
 };
 
+
 console.log("C7-Arrays Ejercicio "+ 8+"A" + " -econtrarElemento-");
-console.log(encontrarElemento([1, 8, 4, 2, 'hola', 6, 'Eje-3',3, 4,])); // funciona con [];
-console.log(encontrarElemento([1, 8, 2, 4, 7, 6, 5,3, 9, ]));
+//encontrarElemento([1, 8, 4, 2, 'bay', 6, 'Etc',3, 4]);            // no muestra el -1
+console.log(encontrarElemento([1, 8, 4, 2, 'bay', 6, 'Etc',3, 4])); // funciona con [];
 function encontrarElemento(num, array) {
    // Busca el número pasado por argumento dentro del array.
-   // Si lo encuentras debes retornar el INDICE en el que se encuentra dentro del array.
+   // Si lo encuentras debes retornar el INDICE en el 
+   //que se encuentra dentro del array.
    // Si no se encuentra, retorna -1.
    // Tu código:
    console.log(num);
-   return num.indexOf( 9 );
-   return num.indexOf( "hola" );
-   //indice = array.indexOf("Eje-3");
-   //return indice;
-   
-   //console.log(array);         //la funcion no corre con el array
-   //return array.indexOf( 4 );  //la funcion no corre con el array
-}
-//module.exports = encontrarElemento;
-
+   console.log(num.indexOf(6));
+   return num.indexOf( 10 );  // funciona el return y console.log();
+   return num.indexOf("bay"); // 2 lineas en una
+   indice = num.indexOf("bay");
+   return indice;
+}; 
+  
 
 console.log("C7-Arrays Ejercicio "+ 8+ "B" + " -arrayContiene-");
-console.log(arrayContiene([8, "Contiene", 2, 'hola', 4, 'dia',16, 'elemento']));
+arrayContiene([8, "pais", 'haw',2, 4, 'dia',16, 'rei']);
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código: 
    console.log(array);
-   // for(var i = 0; i < array.length; i++){
-      //       if (array[i] === 'elemento'){ };
-      //       //return true;  
-      //       };
-      
-      var contieneElemento = array.includes("elemento");
+   for(var i = 0; i < array.length; i=i+1){ 
+            // if (array[i] === 'ha') console.log(true);  
+            // else console.log(false);
+            // VERIFICAR QUE SALGA UN SOLO FALSE
+            if (array[i] === 'haw') console.log("si");  
+            else console.log("no esta");
+         };  
+
+      var contieneElemento = array.includes("dia");
       console.log(contieneElemento);
-      //return contieneElemento;
-      console.log(array.indexOf("elemento"));
-      return array.includes("elemento");
-   };
+      
+      console.log(array.indexOf("rei"));
+      return array.includes("rei");    // NO FUNCIONA
+};
    
    console.log("C7-Arrays Ejercicio "+ 9 + " -obtenerElementoAleatorio-");
    console.log(obtenerElementoAleatorio([9, "Aleatorio", 2, 'hola', 4, 'dia',16, 'elemento']));
@@ -175,7 +193,19 @@ function arrayContiene(array, elemento) {
    
 
 console.log("C7-Arrays Ejercicio "+ 12 + " -convertirStringAMayusculas-");
-
+function convertirStringAMayusculas(array) {
+   // Convierte a mayúsculas todos los strings del array.
+   // Retorna el arreglo resultante.
+   // Tu código:
+ 
+   const pasarAMayusculas = [];
+   for(let i = 0; i < array.length; i++){
+   pasarAMayusculas.tuUpperCase(array[i] )
+   };
+   return array.toUpperCase();
+   return pasarAMayusculas.toUpperCase; 
+ }
+// NO PASO
 
 console.log("C7-Arrays Ejercicio "+ 13 + " -filtrarNumerosPares-");
 function filtrarNumerosPares(array) {
@@ -197,7 +227,7 @@ function filtrarNumerosPares(array) {
 console.log("C7-Arrays Ejercicio "+ 14 + " -contarElementosMayoresA10-");
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo 
-   // cuyo valor sea mayor que 18.
+   // cuyo valor sea mayor que 10.
    // Tu código:
    console.log(array);
 
@@ -210,12 +240,39 @@ function cuentoElementos(array) {
    console.log(nuevo);
    return nuevo;
 }
-console.log(cuentoElementos([1, 17, 200, 3, 33, 4, 456, 876])); //Funciona con []
-
+console.log(cuentoElementos([1, 17, 200, 3, 33, 4, 456, 876])); 
+//Funciona con []
 
 console.log("C7-Arrays Ejercicio "+ 15 + " -encontrarIndiceMayor-");
+function encontrarIndiceMayor(array) {
+   // Encuentra el índice del número más grande en el array de números.
+   // Devuelve el valor de este índice.
+   // Tu código:
+ 
+   var nuevo =[];
+   for (var i = 0; i < array.length; i=i+1)
+     nuevo.push(array.Math.max[i])
+      nuevo.push(array[i])
+   
+   return nuevo;
+   // NO PASO EXPLICACION
+}
 
 console.log("C7-Arrays Ejercicio "+ 16 + " -multiplicarElementosPorIndice-");
+function multiplicarElementosPorIndice(array) {
+   // Multiplica cada elemento del array por su índice.
+   // Devuelve el nuevo arreglo con los resultados.
+   // Tu código:
+ 
+   var nuevo =[];
+   for (var i = 0; i < array.length; i++)
+   if(array[i] < array.length ) {
+      nuevo.push(array[i])
+   };
+ 
+   return nuevo * array.length;
+   // NO PASO EXPLICACION
+ };
 
 console.log("C7-Arrays Ejercicio "+ 17 + " -agregarNumeros-");
 function agregarNumeros(arrayOfNums) {
@@ -375,10 +432,32 @@ console.log(continueStatement(0));
 
 
 console.log("C7-Arrays Ejercicio "+ 25 + " -contarParesConContinue-");
+function contarParesConContinue(numeros) {
+   // La función recibe un array de numeros por argumento.
+   // Devuelve la cantidad de números pares que hay en el array.
+   // Evita los impares utilizando continue.
+   // Tu código:
+ 
+   if(numeros % 2 == 0) push
+   
+ };
+
+
 console.log("C7-Arrays Ejercicio "+ 26 + " -encontrarPrimerMultiploDeN-");
+function encontrarPrimerMultiploDeN(n, secuencia) {
+   // La función recibe un numero "n" y un array de números "secuencia" como argumentos.
+   // Devuelve el primer múltiplo de n que encuentres en la secuencia de números.
+   // Usa un break para detener el bucle una vez halles el múltiplo.
+   // Tu código:
+ 
+   var multiploN = [];
+   for (let i = 0; i<= 20; i++) {
+     if (i == 12){ break;
+     }
+   }
+ };
 
-
-console.log("C7-Arrays Ejercicio "+ 27 + " -dePalabrasAFrase-");
+console.log("C7-Arrays Ejercicio "+ 27 + " dePalabrasAFrase");
 function dePalabrasAFrase(palabras) {
    // El argumento "palabras" es un arreglo de strings.
    // Retornar un string donde todas las palabras estén concatenadas
@@ -399,22 +478,74 @@ function dePalabrasAFrase(palabras) {
 console.log(dePalabrasAFrase(['Hello', 'world!']));
 
 
-
 console.log("C7-Arrays Ejercicio "+ 28 + " -esArrayNoVacio-");
+function esArrayNoVacio(arr) {
+   // La función recibe un argumento "arr".
+   // Comprueba si este argumento es un array y si tiene al menos un elemento.
+   // Si es así, retorna true, de lo contrario, retorna false.
+   // Tu código:
+ };
+
+
 console.log("C7-Arrays Ejercicio "+ 29 + " -encontrarNumeroFaltante-");
+function encontrarNumeroFaltante(numeros) {
+  // La función recibe un argumento "numeros" correspondiente a un array de números.
+  // Encuentra el número faltante en una secuencia de números enteros consecutivos
+  // y retórnalo.
+  // Devuelve null si el array es vacío o si no hay números faltantes.
+  // Tu código:
+};
+
+
 console.log("C7-Arrays Ejercicio "+ 30 + " -encontrarElementoRepetido-");
+function encontrarElementoRepetido(numeros) {
+   // La función recibe un argumento "numeros" que es un array de números.
+   // Retorna el primer elemento repetido que se encuentre en el array.
+   // Tu código:
+ };
+
+
 console.log("C7-Arrays Ejercicio "+ 31 + " -invertirTexto-");
+function invertirTexto(texto) {
+   // La función recibe un argumento "texto" que es un string.
+   // Tu objetivo es invertir el string y devolver el string invertido.
+   // Tu código:
+ 
+   return texto.reverce
+ };
+
+
 console.log("C7-Arrays Ejercicio "+ 32 + " -esPalindromo-");
+function esPalindromo(string) {
+  // La función recibe un argumento "string".
+  // Verifica si este string es palíndromo o no.
+  // Retorna true si lo es, caso contrario, retorna false.
+  // IMPORTANTE: Un palíndromo es una palabra o frase
+  // que se lee igual hacia adelante que hacia atrás.
+  // Tu código:
+};
+
+
 console.log("C7-Arrays Ejercicio "+ 33 + " -combine(str1, str2, str3)-");
+function combine(str1, str2, str3) {
+   // Esta función debe combinar de forma alternada cada caracter de cada string.
+   // La función recibe 3 argumentos. Solo debe contabilizar aquellos que NO esten vacíos.
+   // Los strings pueden tener cualquier tamaño.
+   // EJEMPLOS
+   // combine("abc", "", "123") == "a1b2c3"
+   // combine("abc", "12345", "") == "a1b2c345"
+   // combine("abc", "12345", "67") == "a16b27c345"
+   // Tu código:
+ 
+ };
 
 
-console.log("Henry-2023 Ejercicio "+ 34 + " ");
+console.log("Henry-2023 Ejercicio "+ 34 + " incrementarPorUno");
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
-   console.log(array + " 4to-Ejer");
-   
+ 
    const arrayIncrementar = [];
    for(let i = 0; i < array.length; i++){
       arrayIncrementar.push(array[i] + 1) } // +2; *2;
@@ -426,8 +557,7 @@ function incrementarPorUno(array) {
    console.log(incrementarPorUno([1, 2, 3, 4, 5 , 6, "dia"]));
    
 
-console.log("Henry-2023 Ejercicio "+ 35 + " ");
-console.log(11 +" Ejercicio" + "-Explicacion-");
+console.log("Henry-2023 Ejercicio "+ 35 + " umeroMasGrande");
 function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
@@ -444,7 +574,7 @@ function numeroMasGrande(arrayOfNums) {
 console.log(numeroMasGrande([303, 2, 103, 0, 10, 20, 300, 40]));
 
 
-console.log("Henry-2023 Ejercicio "+ 36 + " ");
+console.log("Henry-2023 Ejercicio "+ 36 + " diaDeLaSemana");
 function diaDeLaSemana(numeroDeDia) {
    // Supongamos que los días de la semana se6 codifican como 1 = Domingo, 2 = Lunes y así sucesivamente.
    // Realiza una función que, dado el número del día de la semana, retorne: "Es fin de semana"
@@ -462,7 +592,7 @@ console.log(diaDeLaSemana(8)); // no funciona con []
 console.log(diaDeLaSemana(-4)); // no funciona con []
 
 
-console.log("Henry-2023 Ejercicio "+ 37 + " ");
+console.log("Henry-2023 Ejercicio "+ 37 + " empiezaConNueve");
 function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
    // Debe retornar true si el entero inicia con 9 y false en otro caso.
@@ -488,7 +618,7 @@ function empiezaConNueve(num) {
 console.log(empiezaConNueve([98, 8, 4, 5, 6, 19, 30]));
 
 
-console.log("Henry-2023 Ejercicio "+ 38 + " ");
+console.log("Henry-2023 Ejercicio "+ 38 + " mayorACien");
 function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).

@@ -1,3 +1,4 @@
+
 console.log(5 + 11); //Suma              precedencia =12.2
 console.log(4 - 2);  //Resta             precedencia =12.1
 console.log(3 * 1);  //Multiplicacion    precedencia =13,3

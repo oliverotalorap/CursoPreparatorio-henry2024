@@ -9,6 +9,7 @@ console.log(listaDeCompras);
 console.log(listaDeCompras.length);
 console.log(listaDeCompras[4]);
 
+
 console.log("Ejercicio " + (1+1)+ " metodos" ); // Arreglos
 var colores = ['amarillo', 'azul'];
 //colores.push("rojo");

@@ -24,11 +24,11 @@ for (let i = 0; i <= 10; i++) {
 }
 
 console.log("Ejercicio " + (1 + "B") +" Bucle For");
-// i = letra con la que se define un irerador
+// i = letra con la que se define un iterador
 // i =lleva la cuenta de cuantas veses se itera 
 // imprimir o mostrar los muneros del 1 al 100
 //for (let i = 0; i < 100; i=i+1) {  // da del 0 al 99
-for (let i = 1; i <= 100; i=i+1) {
+for (let i = 1; i <= 20; i=i+1) {
     console.log(i);
 
 }

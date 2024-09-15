@@ -26,7 +26,7 @@ console.log("Ejercicio " + (1+2) + " Numeros y every"  )
 var numeros = [  4, 5, 6,];
 console.log(numeros);
 var cumpleCondicion = numeros.every((num) => {
-    return num > 4; 
+    return num > 3; 
     //return num >= 4;
 } 
 )
@@ -71,6 +71,7 @@ console.log(numeros[0]);
 console.log(numeros[4]);
 console.log(numeros);
 
+// verificar el forEach con palabras
 numeros.forEach(num => console.log(num));
 numeros.forEach(num => {if (num == 3) (console.log(num))
     else (console.log("No esta el numero"))
@@ -80,7 +81,38 @@ var numerosmap = numeros.map((num) => {return num + 2});
 console.log(numerosmap);
 var numerosmap = numeros.map((num) => {console.log(num + 2)});
 
-// Del 1 al 7 Ejercicios Henrry Modulo-7 Array
+console.log("Ejercicio 8 Obtener Elemento e Indice")
+let arreglo8 =["hola", "mundo", "feliz", true, 2024];
+console.log(arreglo8);
+console.log(arreglo8.length + " Elementos");
+arreglo8.forEach(function (elemento, indice, Array){
+    console.log(elemento, indice);
+});
+
+console.log("Ejercicio 9 Array con -sort(ordenar)-strings")
+let nombres1 =["maria", "nancy", "bilma", "karla"];
+console.log(nombres1);
+console.log(nombres1.sort());
+nombres1.forEach(function (elemento, indice){
+    console.log(elemento, indice);
+});
+
+
+console.log("Ejercicio 10 Array con  -sort(ordenar)-num")
+let ordennum =[40, 123, 1, 5, 25, 13];
+console.log(ordennum);
+console.log(ordennum.sort());
+
+console.log(ordennum.sort(function(a, b) {return a-b }));
+ordennum.sort(function(a, b) {return a-b });
+console.log(ordennum);
+
+//console.log(ordennum.forEach(function (elemento, indice )));
+ordennum.forEach(function (elemento, indice){
+    console.log(elemento, indice); });
+
+
+// Del 1 al 9 Ejercicios Henrry Modulo-7 Array
 // del A-1 al H-8 Ejerccicios de practica del ..?
 
 console.log("Ejercicio A-1 clases de Arrays" )

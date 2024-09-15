@@ -1,28 +1,33 @@
-console.log("Ejercicio A  Bucle while");
+console.log("Ejercicio A-1  Bucle while");
 var i = 1;
-while(i < 1) { console.log(i); i= i+1;
-};
-
-console.log("Ejercicio B  Bucle do-while");
-var i = 1;
-do{ console.log(i); i++;
-} while(i < 1);
-
-// con do{} while(i<1); el codigo se ejecuta minino 1ves.
-console.log("Ejercicio A-2  Bucle while");
-var i = 1;
-while(i < 10) { 
-  console.log(i); 
-  i= i+1;
-};
+while(i < 1) { console.log(i); i= i+1;  };
 
 console.log("Ejercicio B-2  Bucle do-while");
-var i = 0;
-do{ console.log(i); 
-  i++;
-} while(i <= 10);
+var i = 3;
+do{ console.log(i); i++;  
+} while(i < 4);
 
-  
+// con do{} while(i<1); el codigo se ejecuta minino 1ves.
+console.log("Ejercicio C-3  Bucle while");
+var i = 1;
+while(i <= 5) { console.log(i); i= i+1; };
+
+
+console.log("Ejercicio D-4  Bucle do-while");
+var i = 0;
+do{ console.log(i); i++; } while(i <= 5);
+
+
+console.log("Ejercicio D-5 -Bucle --for--")
+var arr = [1, 2, 3, 4, 5];
+  //console.log(arr);
+  console.log(arr.reverse());
+// for (let i = 0; i <arr.length; i=i+1) {
+//    console.log(arr[i]); }
+  arr.forEach(function (elemento, indice)
+  {console.log(elemento, indice); });
+
+    
 console.log("Ejercicio " + (1 +" A") +" DoWhile /HacerMientras" );
 //let result = 0;   //suma el total de las iteraciones
 let result = '';    //muestra cuantas iteraciones realizo

@@ -14,8 +14,8 @@ let arreglo9 = ["hola", "mundo", "como", "estan"]
 function callback(acumulador, elem, indice, array) {
   return acumulador + elem;
 }
-//let resultado9 = arreglo9.reduce(callback, 0);
-let resultado9 = arreglo9.reduce(callback, "-");
+let resultado9 = arreglo9.reduce(callback);
+//let resultado9 = arreglo9.reduce(callback, "-");
 
 console.log(resultado9)
 
