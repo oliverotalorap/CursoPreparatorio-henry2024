@@ -1,6 +1,8 @@
-console.log("Ejercicio " + (1+1)+ " metodos" ); // Arreglos
+console.log("Ejercicio " + (1)+ " metodos" ); // Arreglos
 
 var numeros = [ 3, 4,];
+console.log(numeros);
+
 numeros.push(5, 6);
 numeros.pop();
 numeros.unshift( 1, 2);

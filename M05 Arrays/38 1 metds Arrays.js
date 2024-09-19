@@ -24,11 +24,13 @@ console.log(2 + " Ejercicio inclidesDAli");
 // arreglos de pintores
 // INCLUDES
 var pintores = ['Picasso', 'Velázquez', 'Van Gogh', 'Dalí'];
+console.log(pintores);
+
+console.log(pintores.includes('Dalí'));
 var existeDali = pintores.includes('Dalí');
  console.log(existeDali);
- console.log(pintores);
 
-console.log(3 + " Ejercicio");
+console.log(3 + " Ejercicio numeros.includes +HOLA");
 // EVERY
 var numeros = [ 7, 6, 8, 9];
 console.log(numeros.includes(5));

@@ -185,11 +185,12 @@ function callback(elem) {
 let resultado6 = arreglo6.map(callback);
 console.log(resultado6);
 
-console.log("Ejercicio g-7 funcion con callbank-filter")
+console.log("Ejercicio G-7 funcion con callbank-filter")
 let arreglo7 =["hola", "mundo", "feliz", true, 2024];
 function callback(elem) {
     if(elem.length == 5) return elem;
-    //if(elem.length === 2024) return elem;
+    //if(elem.length == true) return elem;
+    //if(elem.length == 2024) return elem;
 }
 let resultado7 = arreglo7.filter(callback);
 //let resultado7 = arreglo7.map(callback);

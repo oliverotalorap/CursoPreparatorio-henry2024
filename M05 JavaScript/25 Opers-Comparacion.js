@@ -1,6 +1,7 @@
 //Operaciones de comparacion
 console.log(4 < 7);
 console.log(4 < 1);
+console.log("Ejercicio estamos Elaborando")
 console.log(4 < 4);
 console.log(4 >= 7);                                                                                                
 console.log(4 <= 7);     
