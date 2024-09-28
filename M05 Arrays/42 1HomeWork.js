@@ -227,6 +227,9 @@ function filtrarNumerosPares(array) {
    // Tu código:
    console.log(array);
 
+   //if (elemento % 2 === 0) return elemento; // no filtro
+   //if (array %2 === 0) return array;          // no filtro.
+
    var nuevo =[];
     for (var i = 0; i < array.length; i=i+1)
     if(array[i] % 2 == 0){
@@ -273,27 +276,36 @@ function encontrarIndiceMayorA(array) {
 // NO PASO en el HomeWork, pero si paso en mis Ensayos
 };
 
-console.log("C7-Arrays Ejercicio "+ 15 + " B -encontrarNumeroMayor-");
-//console.log(encontrarIndiceMayor([2, 18, 201, 568, 44, 5, 567, 543])); 
-encontrarIndiceMayor([3, 19, 600, 569, 45, 6, 568, 544]); 
+console.log("C7-Arrays Ejercicio "+ 15 + " B -encontrarNumeroMayor-"); 
+encontrarIndiceMayor([3, 19, 600, 569, 45, 601, 568, 544]); 
 function encontrarIndiceMayor(array) {
    // Encuentra el índice del número más grande en el array de números.
    // Devuelve el valor de este índice.      // Tu código:
  console.log(array);
 
- var numGrande = array[0];
- for (let i = 0; i < array.length; i++){
-    if (numGrande < array[i]) {numGrande = array[i]; };
-   }; 
-   console.log(numGrande);
-   console.log(indiceMax = array.indexOf(numGrande));
+//  var numGrande = array[0];
+//  for (let i = 0; i < array.length; i++){
+//     if (numGrande < array[i]) {numGrande = array[i]; };
+//    }; 
+//    console.log(numGrande);
+//    console.log(indiceMax = array.indexOf(numGrande));
+      // Analisar para sacar el indiceMayor
 
- array.sort(function(a, b) {return a-b });
- console.log(array[array.length -1] + " con array.sort(funtion(a,b) ");
+
+let numeroMayor = array[0];
+let indiceMayor = 0;
+array.forEach(function(numero, indice) {
+  //if (numero > numeroMaror) {
+  if (numero > numeroMayor) {
+    numeroMayor = numero;
+    indiceMayor = indice;
+} });
+console.log(indiceMayor + " Es el i-mayor");  
+//return indiceMayor;  
 
  array.forEach(function (elemento, indice){
     console.log(elemento, indice);  });     // Muestra Elementos e Indices
-console.log("NO PASO EXPLICACIO");
+console.log("paso");
 };
 
 
@@ -307,13 +319,17 @@ function multiplicarElementosPorIndice(array) {
  console.log(array);
  console.log(array.length);
 
- const multiplicarIndice = [];
- for(let i = 0; i < array.length; i=i+1){
-   multiplicarIndice.push(array[i] * multiplicarIndice.length); 
-};
-console.log(multiplicarIndice); 
-//console.log(multiplicarIndice.length * array.length); 
-// //console.log(multiplicarIndice[i] * array.length); //NO FUNCIONO 
+ let nuevoArreglo = array.map(function(numero, indice) {
+   return numero * indice;
+ });
+ return nuevoArreglo
+
+//  const multiplicarIndice = [];
+//  for(let i = 0; i < array.length; i=i+1){
+//    multiplicarIndice.push(array[i] * multiplicarIndice.length); 
+// };
+// console.log(multiplicarIndice); 
+
 };
 
 console.log("C7-Arrays Ejercicio "+ 17 + " -agregarNumeros-");
@@ -358,7 +374,7 @@ function promedioResultadosTest(resultadosTest) {
 
 
 console.log("C7-Arrays Ejercicio "+ 19 + " multiplicarArgumentos-");
-console.log(multiplicarArgumentos(3, 5, 2, 5, 6)); 
+console.log(multiplicarArgumentos(2,3,4,5,6,7)); 
 //multiplicarArgumentos(3, 5, 2, 5, 6); // -NO LLEVA [] 3, 5, 4, 5, 6
 function multiplicarArgumentos() {
    // Usa la palabra clave `arguments` para multiplicar 
@@ -367,14 +383,17 @@ function multiplicarArgumentos() {
    //Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
-   if(arguments.length === 0 ) return 0;
-   var argMultiplicados = arguments[0]  // let i =1 ¿? en ves de 0.
-   for(let i = 1; i < arguments.length; i++ ){
-      //argMultiplicados = argMultiplicados * arguments[i];
-      console.log(argMultiplicados = argMultiplicados * arguments[i]);
-   };
-   console.log(argMultiplicados);
-   //return argMultiplicados;
+console.log(arguments);
+//return arguments;
+
+   // if(arguments.length === 0 ) return 0;
+   // var argMultiplicados = arguments[0]  // let i =1 ¿? en ves de 0.
+   // for(let i = 1; i < arguments.length; i++ ){
+   //    //argMultiplicados = argMultiplicados * arguments[i];
+   //    console.log(argMultiplicados = argMultiplicados * arguments[i]);
+   // };
+   // console.log(argMultiplicados);
+   // //return argMultiplicados;
 };
 
 
@@ -441,7 +460,7 @@ function tablaDelSeis() {
 
 
 console.log("C7-Arrays Ejercicio "+ 23 + " -breakStatement = romper declaracion");
-//console.log(breakStatement(0));   // funciona solo con ( )
+console.log(breakStatement(0));   // funciona solo con ( )
 //console.log(breakStatement(-3));
 function breakStatement(num) {      
    // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
@@ -451,6 +470,7 @@ function breakStatement(num) {
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
    console.log(num);
+
    //let aux2 = [];
    //for(let i = 0; i < 10; i=i+1) { num = num + 2;   // num += 2;
    let aux = [];
@@ -464,7 +484,6 @@ function breakStatement(num) {
       console.log(aux);
       //return aux;
 };
-console.log(breakStatement([0])); // [0] agrega un digito a cada indice
    
    
 console.log("C7-Arrays Ejercicio "+ 24 + " -continueStatement-");
