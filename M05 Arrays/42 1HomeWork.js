@@ -634,7 +634,7 @@ function encontrarNumeroFaltante(numeros) {
 
 
 console.log("C7-Arrays Ejercicio "+ 30 + " -encontrarElementoRepetido-");
-console.log(encontrarElementoRepetido([1, 3, 11, 4, 5, 6, 7, 8, 11, 12, 5, 13]));
+console.log(encontrarElementoRepetido([1, 3, 2, 4, 5, 6, 7, 8, 11, 2, 5, 13]));
 //console.log(encontrarElementoRepetido([]));
 function encontrarElementoRepetido(numeros) {
    // La función recibe un argumento "numeros" que es un array de números.
@@ -642,18 +642,22 @@ function encontrarElementoRepetido(numeros) {
    // Tu código:
    console.log(numeros);
 
-   const numerosVistos = new Set();  // Creamos un Set para almacenar números vistos
-
    for (let i = 0; i < numeros.length; i++) {
-     if (numerosVistos.has(numeros[i])) { 
-       return numeros[i];  // Si ya hemos visto el número, lo retornamos
-     } else {
-       numerosVistos.add(numeros[i]);  // Si no lo hemos visto, lo agregamos al Set
-     }
+      for (let j = i+1; j <numeros.length; j++) {
+        if (numeros[i] === numeros[j]) return numeros[i];    
+    } };
+
+
+   const numerosVistos = new Set();  // Creamos un Set para almacenar números vistos
+   for (let i = 0; i < numeros.length; i++) {
+     if (numerosVistos.has(numeros[i])) {return numeros[i]; }
+      // Si ya hemos visto el número, lo retornamos
+     else {numerosVistos.add(numeros[i]); } 
+     // Si no lo hemos visto, lo agregamos al Set
    }
    return null;  // Si no encontramos números repetidos, retornamos null
-
    // NO PASO en el HomeWork, pero so paso en mi block de Ejercicios.
+
  };
 
 
@@ -724,26 +728,37 @@ function combine(str1, str2, str3) {
    // Tu código:
  console.log(str1, str2, str3);
 
- const maxLength = Math.max(str1.length, str2.length, str3.length);  // Determinamos la longitud máxima
- let resultado = '';  // String donde combinaremos los caracteres
+//  const maxLength = Math.max(str1.length, str2.length, str3.length);  // Determinamos la longitud máxima
+//  let resultado = '';  // String donde combinaremos los caracteres
 
- for (let i = 0; i < maxLength; i++) { 
-   if (i < str1.length) { resultado += str1[i];  // Agregamos el carácter de str1 si existe
-   }
-   if (i < str2.length) { resultado += str2[i];  // Agregamos el carácter de str2 si existe
-   }
-   if (i < str3.length) { resultado += str3[i];  // Agregamos el carácter de str3 si existe
-   }
-   console.log(resultado);  // Retornamos el string combinado
-   return resultado;  // Retornamos el string combinado
+//  for (let i = 0; i < maxLength; i++) { 
+//    if (i < str1.length) { resultado += str1[i]; } // Agregamos el carácter de str1 si existe
+//    if (i < str2.length) { resultado += str2[i]; } // Agregamos el carácter de str2 si existe
+//    if (i < str3.length) { resultado += str3[i]; } // Agregamos el carácter de str3 si existe
+//    console.log(resultado);  // Retornamos el string combinado
+//    return resultado;  // Retornamos el string combinado
+// };
+
+let lengthMasLargo = Math.max(str1.length, str2.length, str3.length)
+let stringFinal = ""
+for ( let i = 0; i< lengthMasLargo; i++) {
+if ( str1[i]) stringFinal = stringFinal + str1[i]
+if ( str2[i]) stringFinal = stringFinal + str2[i]
+if ( str3[i]) stringFinal = stringFinal + str3[i]
 };
- };
+return stringFinal;   // Ejercicio Camilo Pineda
 
- const resultado1 = combine("abc", "", "123");
-console.log(resultado1);  // Imprime "a1b2c3"
+};
 
- const resultado3 = combine("abc", "12345", "67");
-console.log(resultado3);  // Imprime "a16b27c345"
+//  const resultado1 = combine("abc", "", "123");
+// console.log(resultado1);  // Imprime "a1b2c3"
+
+//  const resultado3 = combine("abc", "12345", "67");
+// console.log(resultado3);  // Imprime "a16b27c345"
+
+
+console.log ("Ejercicios Extras de 34 al 38" )
+console.log ("Ejercicios Extras de 34 al 38" )
 
 
 console.log("Henry-2023 Ejercicio "+ 34 + " incrementarPorUno");
