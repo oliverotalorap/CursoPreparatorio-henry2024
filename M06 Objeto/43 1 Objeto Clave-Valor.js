@@ -1,13 +1,14 @@
-console.log(1 + ' Ejercicio')
+console.log("OBJETOS Ejercicio-01 -Deportes-")
 var deportes = {
     conBalon: ['Futbol', 'Basketball', 'Golf'],
     sinBalon: ['Boxeo', 'Surf', 'Trekking'],
- };
+};
 console.log(deportes.conBalon);
 console.log(deportes.sinBalon);
 
-console.log(2 + ' Ejercicio')
- var persona = { 
+
+console.log("OBJETOS Ejercicio-02 -Datos persona-")
+var persona = { 
     nombre: 'Lucas', 
     edad: 20, 
     estudios: { esProgramador: true },
@@ -23,7 +24,7 @@ persona.edad = 40;
 console.log(persona);
 
 
-console.log(3 + ' Ejercicio')
+console.log("OBJETOS Ejercicio-03 -Carros marcas y modelos-")
 //CREAR
 var autos = {};
 autos.marcas = ['Ford', 'Audi', 'Ferrari']; // -No admite { };
@@ -34,6 +35,7 @@ console.log(autos);
 delete autos.marcas;
 console.log(autos);
 
+console.log("OBJETOS Ejercicio" + 3+1 + " -Carros marcas y modelos-")
 console.log(3+1 + ' Ejercicio')
 var misFunciones = {
     saludar: function () {
