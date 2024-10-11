@@ -11,7 +11,9 @@ console.log("C7-Arrays Ejercicio 02"+ " devolverUltimoElemento");
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+
    return array[array.length -1];
+
    
    const ultimoElemento = array.length -1;
    return array[ultimoElemento];
@@ -24,6 +26,7 @@ function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
    console.log(array);
+   console.log(array.length);
    return array.length;
 }
 console.log(obtenerLargoDelArray([1, 2, 3, 4, 'hola', 6, 'Eje-3',8]));
@@ -61,8 +64,8 @@ console.log("C7-Arrays Ejercicio "+ 6 + " -invertirArray-");
 function invertirArray(array) {
    // Invierte el arreglo array recibido por argumento.
    // Tu código:
-   
    console.log(array);  // Salida: [1, 2, 3, 4, 5, 6, 7]
+   
    console.log(array.reverse());  // Salida: [7, 6, 5, 4, 3, 2, 1]
 };
 invertirArray(array = [1, 2, 3, 4, 5, 6, 7]);  
@@ -461,31 +464,20 @@ function multiplicarArgumentos() {
 console.log(arguments);
 //return arguments;
 
-// if(arguments.length === 0 ) return 0;
-// if(arguments.length === 1 ) return arguments[0];
-// let  multiplicacion = 1; 
-// for(let i = 0; i < arguments.length; i++ ){
-//   multiplicacion = multiplicacion * arguments[i];
-// };
-//  return multiplicacion;
+if(arguments.length === 0 ) return 0;
+if(arguments.length === 1 ) return arguments[0];
+let  multiplicacion = 1; 
+for(let i = 0; i < arguments.length; i++ ){
+  multiplicacion = multiplicacion * arguments[i];
+};
+ return multiplicacion;
 
-   if(arguments.length === 0 ) return 0;
-   var argMultiplicados = arguments[0]  // let i =1 ¿? en ves de 0.
-   for(let i = 1; i < arguments.length; i++ ){
-      //argMultiplicados = argMultiplicados * arguments[i];
-      console.log(argMultiplicados = argMultiplicados * arguments[i]);
-   };
-   console.log(argMultiplicados);
-   // //return argMultiplicados;
-
-//    if(arguments.length === 0 ) return 0;
-//    if(arguments.length === 1 ) return arguments[0];
-//   let multiplicacion = arguments.reduce (element => {
-   
-//   });(function(acum, numero) {
-//     return acum * numero;
-//   });    
-//    return multiplicacion;   // NO PASO REPASAR y remplazar el -reduce-
+ if(arguments.length === 0 ) return 0;
+ var argMultiplicados = arguments[0]  // let i =1 ¿? en ves de 0.
+ for(let i = 1; i < arguments.length; i++ ){
+   argMultiplicados = argMultiplicados * arguments[i];
+ };
+  return argMultiplicados;
 
 };
 
@@ -776,11 +768,11 @@ function encontrarNumeroFaltante(numeros) {
   // Tu código:
    console.log(numeros);
 
-// if (numeros.length === 0) return null; 
-//   for (let i = 0; i < numeros.length - 1; i++) {
-//     if (numeros[i] + 1 !== numeros[i + 1] ) return numeros[i] + 1;
-//   };
-//   return null; //Ejemplos Camilo Pineda 
+if (numeros.length === 0) return null; 
+  for (let i = 0; i < numeros.length - 1; i++) {
+    if (numeros[i] + 1 !== numeros[i + 1] ) return numeros[i] + 1;
+  };
+  return null; //Ejemplos Camilo Pineda 
 
    if (numeros.length === 0) {return null; }; // Si el arreglo está vacío, devolvemos null
     for (let i = 0; i < numeros.length - 1; i++) {
@@ -859,22 +851,23 @@ function esPalindromo(string) {
   // que se lee igual hacia adelante que hacia atrás.
   // Tu código:
 console.log(string);
+//console.log(string.split());
+
+// Normalizamos el string: convertimos a minúsculas y eliminamos caracteres no alfanuméricos
+string = string.toLowerCase().replace(/[^a-z0-9]/g, '');     
+const stringInvertido = string.split('').reverse().join(''); // Invertimos el string
+console.log(string) === stringInvertido;                     // Comparamos string original con el invertido
+return string === stringInvertido;
+
+return string.split("").reverse().join(""); // por Camilo Pineda
+console.log(string);                      // HACE FALTA IGUALARLO Y DEBOLVEERLO
+return string;                   // PENDIENTE SACARLO EN PANTALLA
 
 // if(string.split("").reverse().join("") === string)
+//    //console.log(string)
 //    return true;
 // else return false;
-// // Ejercicio Camilo Pineda -(SALE EN ESCITORIO pero pasa el HomeWork
-
-//return string.split("").reverse().join(""); // por Camilo Pineda
-// HACE FALTA IGUALARLO Y DEBOLVEERLO
-//console.log(string)
-
-
-  // Normalizamos el string: convertimos a minúsculas y eliminamos caracteres no alfanuméricos
-  string = string.toLowerCase().replace(/[^a-z0-9]/g, '');     
-  const stringInvertido = string.split('').reverse().join(''); // Invertimos el string
-  console.log(string) === stringInvertido;                     // Comparamos string original con el invertido
-  return string === stringInvertido;
+// //Ejercicio Camilo Pineda -(SALE EN ESCITORIO pero pasa el HomeWork
 
   // paso: analisar la estructira de la funcion,
 };
@@ -893,7 +886,6 @@ function combine(str1, str2, str3) {
    // combine("abc", "12345", "67") == "a16b27c345"
    // Tu código:
  console.log(str1, str2, str3);
-
 
 //console.log(combine(str1, str2, str3));    // NO PASA, REPITE MUCHAS VESES
 //return combine(str1, str2, str3);          // NO PASA, REPITE MUCHAS VESES
@@ -921,7 +913,7 @@ return stringFinal;           // Ejercicio Camilo Pineda
 };
 // const resultado1 = combine("abc", "", "123");
 // console.log(resultado1);  // Imprime "a1b2c3"
-const resultado3 = combine("abc", "12345", "89");     //-¡IMPRIME SOLO PQ?-
+//const resultado3 = combine("abc", "12345", "89");     //-¡IMPRIME SOLO PQ?-
 //console.log(resultado3);  // Imprime "a18b29c345"
 
 
@@ -942,14 +934,15 @@ function incrementarPorUno(array) {
    const arrayIncrementar = [];
    for(let i = 0; i < array.length; i++){
       arrayIncrementar.push(array[i] + 1) } // +2; *2;
-      return (arrayIncrementar);  //.forEach  //return array;-retorna el array sin cambios-
-      
+      return arrayIncrementar;  //.forEach  //return array;-retorna el array sin cambios-
+       
    };
    console.log(incrementarPorUno([1, 2, 3, 4, 5 , 6, "dia", "tia"]));
    
 
 console.log("Henry-2023 Ejercicio "+ 35 + " numeroMasGrande");
-console.log(numeroMasGrande([303, 2, 103, 0, 10, 20, 300, 40]));
+console.log(numeroMasGrande([303, 2, 103, 0, 10, 20, 300, 4
+   0]));
 function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
