@@ -8,7 +8,7 @@ function mayorYMenorYPar(num) {
   mayorYMenorYPar(7); 
   mayorYMenorYPar(8); 
     
-  console.log("Ejercicio-2")
+  console.log("Ejercicio-2, Disyuncion (or=||) ")
   // OR
   function operadorOr(str) {
     if (str === 'Henry' || str.length < 2) console.log(true);
@@ -19,13 +19,15 @@ function mayorYMenorYPar(num) {
       operadorOr('H');
     
     //NOT
-    console.log("Ejercicio-3 NOT.")
+    console.log("Ejercicio-3, Funcion negacion  (not= !).")
     function negacionSalida(salida) {
       if (!salida ) console.log('Tiene salida'); 
    
     }
-    negacionSalida("Beto");
+    
     negacionSalida(false); 
+    negacionSalida(true); 
+    negacionSalida("Beto");
 
   
     console.log("Ejercicio-4 con not")

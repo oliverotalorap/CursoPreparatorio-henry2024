@@ -4,10 +4,13 @@ function esIgualYNegativo(a, b) {
   // Determina si son iguales y son ambos negativos.
   // De ser así, retorna true, de lo contrario, retorna false.
   // Tu código:
-  if (a == b && a < 0 && b < 0 ) return true;
-  else return false;
+  // if (a == b && a < 0 && b < 0 ) return true;
+  // else return false;
+  if (a == b && a < 0 && b < 0 ) console.log (true);
+    else console.log(false);
 }
-esIgualYNegativo(-2, -4)
+esIgualYNegativo( -4, -4)
+esIgualYNegativo( -2, -4)
 
 
 console.log("Bucles C-6 Ejercicio " + " 2 booleano1 y 2  " );
@@ -58,6 +61,7 @@ function mayoriaDeEdad(edad) {
   else console.log("Not allowed");
 }
 mayoriaDeEdad(20);
+mayoriaDeEdad(17);
 
 console.log("Bucles C-6 Ejercicio " + " 5 esVerdadero" );
 function esVerdadero(valor) {
