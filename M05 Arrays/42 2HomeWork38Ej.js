@@ -2,23 +2,23 @@ console.log("C7-Arrays Ejercicio 01" + " devolverPrimerElemento");
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
+   console.log(array);
    return array[0];
 }
-console.log(devolverPrimerElemento([11, 2, 3, 4, 5, 6,'uno', 7]));
+console.log(devolverPrimerElemento([11, 2, 3, 4, 5, 6,'siete', "ocho"]));
 
 
 console.log("C7-Arrays Ejercicio 02"+ " devolverUltimoElemento");
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
-
+   console.log(array);
    return array[array.length -1];
 
-   
    const ultimoElemento = array.length -1;
    return array[ultimoElemento];
 }
-console.log(devolverUltimoElemento([1, 2, 3, 4, 22, "Edison", "He"]));
+console.log(devolverUltimoElemento([11, 2, 3, 4, 5, 6,'siete', "ocho"]));
 
 
 console.log("C7-Arrays Ejercicio 03"+ " obtenerLargoDelArray" );
@@ -28,8 +28,8 @@ function obtenerLargoDelArray(array) {
    console.log(array);
    console.log(array.length);
    return array.length;
-}
-console.log(obtenerLargoDelArray([1, 2, 3, 4, 'hola', 6, 'Eje-3',8]));
+};
+console.log(obtenerLargoDelArray([11, 2, 3, 4, 5, 6,'siete', "ocho"]));
 
 
 console.log("C7-Arrays Ejercicio 04"+ " agregarItemAlFinalDelArray");
@@ -38,12 +38,14 @@ function agregarItemAlFinalDelArray(array, elemento) {
    // Retorna el arreglo.
    // Tu código:
    console.log(array);
-   //console.log(array.push('elemento', 'ElementoF'));// 
-   array.push('ElementoF', "demasElementos");
+   //console.log(array.push('elemento', 'ElementoF')); //NO Funciona
+   array.push('Elemento', "ElementosFinal");
    console.log(array);
    return array;
+
 }
-console.log(agregarItemAlFinalDelArray([1, 2, 3 , 4, 'dia']));
+//agregarItemAlFinalDelArray([11, 2, 3, 4, "cinco"]);
+console.log(agregarItemAlFinalDelArray([11, 2, 3, 4, "cinco"]));
 
 
 console.log("C7-Arrays Ejercicio "+ 5," agregarItemAlComienzotem");
@@ -56,7 +58,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
    console.log(array);
    return array;
 }
-agregarItemAlComienzoDelArray([4, 5, 'seis']);            //estudiar el pq;
+agregarItemAlComienzoDelArray([1, "dos", 3, 4, "cinco"]);            //estudiar el pq;
 //console.log(agregarItemAlComienzoDelArray([4, 5, 'seis']));
 
 
@@ -66,14 +68,17 @@ function invertirArray(array) {
    // Tu código:
    console.log(array);  // Salida: [1, 2, 3, 4, 5, 6, 7]
    
-   console.log(array.reverse());  // Salida: [7, 6, 5, 4, 3, 2, 1]
+  console.log(array.reverse());  // Salida: [7, 6, 5, 4, 3, 2, 1]
+   return array.reverse();  // Salida: [7, 6, 5, 4, 3, 2, 1]
 };
-invertirArray(array = [1, 2, 3, 4, 5, 6, 7]);  
+invertirArray(array = [1, 2, 3, 4, "cinco"]);  
 invertirArray(array = (["uno", "dos", "tres", "cinco"]));  
+//console.log(invertirArray(array = (["uno", "dos", "tres", "cinco"])));  
 //invertirArray([1, 2, 3, 4, 5, 6, 7]);  
 
 console.log("C7-Arrays Ejercicio "+ 7 + " -ordenarArray-");
-ordenarArray(array = [24, 8, 234, 4, 2, 'hola', 6, 'Eje',3, 4,]); // funciona con [];
+//ordenarArray(array = [24, 8, 234, 4, 2, 6, 'Eje',3, 4,]); // funciona con [];
+ordenarArray([24, 8, 234, 4, 2, 6, 'Eje',3, 4,]); // funciona con [];
 //console.log(ordenarArray([1, 8, 2, 4, 3, 345, 6, 35, 5, ]));
 function ordenarArray(array) {
    // Ordena los elementos del areglo array de menor a mayor.
@@ -84,10 +89,10 @@ function ordenarArray(array) {
    console.log(array);
    console.log(array.sort());
 
-   array.sort(function(a, b) {return a-b });
-   console.log(array);
-   //console.log(array.sort(function(a, b) {return a-b })); //En una 2 lineas de codigo.-
-   //console.log(array.sort(function(a, b) {console.log(a-b) })); //NO FUNCIONA DESCARTADA
+   //array.sort(function(a, b) {return a-b });
+   //console.log(array);
+   console.log(array.sort(function(a, b) {return a-b })); //En una, 2-lineas de codigo;
+   //console.log(array.sort(function(a, b) {console.log(a-b) })); //NO Funciona console.log()
 };
 
 
@@ -104,11 +109,10 @@ function encontrarElemento(num, array) {
    console.log(num, array);
  
    // for (let i = 0; i< array.length; i++) {
-   //    if (array[i] === num) return i
-   // };
-   //   return -1                      // pasa en el Homework, PERO NO PASA EN MI ESCRITORIO
+   //    if (array[i] === num) return i };
+   //   return -1                // pasa en el Homework, PERO NO PASA EN MI ESCRITORIO
 
-   console.log(num.indexOf(6));
+   console.log(num.indexOf(8));
    //return num.indexOf(5);
     
    return num.indexOf("bay"); // 2 lineas en una
@@ -119,42 +123,43 @@ function encontrarElemento(num, array) {
 
 console.log("C7-Arrays Ejercicio "+ 8+ "B" + " -arrayContiene-");
 //console.log(arrayContiene([8, "pais", 'haw',2, 4, 'dia',6, 'rei']));
-arrayContiene([8, "pais", 'haw',2, 4, 'dia',6, 'rei',10], "tia", 14, "mia");
+arrayContiene([1, "pais", 3, "haw", 5, 'dia',7, 'rei',9], "mes", 11);
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código: 
-      console.log(array, elemento);
+      console.log(array, elemento);        //Muestra 1er Elemento
+      //console.log(array, elemento.length);   //Muestra la cantidad de elementos
 
-   // for(var i = 0; i < array.length; i=i+1){ 
-   //          // if (array[i] === 'ha') console.log(true);  
-   //          // else console.log(false);
-   //          // VERIFICAR QUE SALGA UN SOLO FALSE
-   //          if (array[i] === 'haw') console.log("i= "+ array.indexOf("haw")) ;  
-   //          if (array[i] === 'haw') console.log(true);  
-   //          if (array[i] === 'haw') console.log(array[i]);  
-   //          //else console.log("No es haw, El elemento es =" + array[i]);
-   //    else console.log("i= "+array.indexOf(array[i])+" E#= "+array.indexOf(array[i+1])+" N'E= " +array[i]);
-   // };  
-
+   for(var i = 0; i < array.length; i=i+1){ 
+            // if (array[i] === 'ha') console.log(true);  
+            // else console.log(false);
+            // VERIFICAR QUE SALGA UN SOLO FALSE
+            if (array[i] === 'haw') console.log("i= "+ array.indexOf("haw")) ;  
+            if (array[i] === 'haw') console.log(true);  
+            if (array[i] === 'haw') console.log(array[i]);  
+            //else console.log("No es haw, El elemento es =" + array[i]);
+      else console.log("i= "+array.indexOf(array[i])+" E#= "+array.indexOf(array[i+1])+" N-E= " +array[i]);
+   };  
+  
       var contieneElemento = array.includes("dia");
       console.log(contieneElemento);
 
-      console.log(array.indexOf(4));
-      //return array.includes("rei");    // FUNCIONA con el console.log().
+      console.log("Es indice: " + array.indexOf("dia"));
+      return array.includes("dia");    //SOLO-FUNCIONA con el console.log().
 };
    
    console.log("C7-Arrays Ejercicio "+ 9 + " -obtenerElementoAleatorio-");
    //console.log(obtenerElementoAleatorio(["perro", "gato", "cui", "loro", "león"]));
    //obtenerElementoAleatorio(array = [1, 2, 3, 4, 5, 6, 7, 8, 9]); // no funciona el -return-
-   console.log(obtenerElementoAleatorio([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+   console.log(obtenerElementoAleatorio([1, 2, 3, 4, 5, 6, 7, 8]));
    function obtenerElementoAleatorio(array) {
       // Devuelve un elemento aleatorio del arreglo array.
       // PISTA: Usa el método Math.random().
       // Tu código:
       console.log(array);        // Elemento ALEATORIO es variante
 
-      // console.log(array[Math.floor(Math.random() * array.length)]);
+      console.log(array[Math.floor(Math.random() * array.length)]);
       // return array[Math.floor(Math.random() * array.length)];
    
       let indiceAleatorio = Math.floor(Math.random() * array.length);
@@ -176,7 +181,7 @@ function arrayContiene(array, elemento) {
       //  } );
       //  console.log(arregloDeCinco);
       //  console.log(arregloDeCinco[0]);
-      //  return arregloDeCinco[0];          // Funciona solo con ayuda del -console.log-
+      // // return arregloDeCinco[0];          // Funciona solo con ayuda del -console.log-
 
       // const primerStringLargo = array.find(function(elemento) {
       //    return elemento.length >= 5; });
@@ -184,7 +189,7 @@ function arrayContiene(array, elemento) {
    
       array[0];
       for (let i =0; i < array.length; i=i+1) 
-      if (array[i].length > 5) { array.push(array[i].length > 5) 
+      if (array[i].length >= 5) { array.push(array[i].length > 5) 
          console.log(array[i]); };
        // pasa enescritorio con >; en Homework pasa con >=.
 
@@ -216,15 +221,15 @@ function arrayContiene(array, elemento) {
       //  console.log(nuevoArreglo);
       //  return nuevoArreglo;
 
-      // const duplicarElementos = [];
-      // for(let i = 0; i < array.length; i=i+1){
-      // duplicarElementos.push(array[i] * 2 ) }
-      // console.log(duplicarElementos); 
+      const duplicarElementos = [];
+      for(let i = 0; i < array.length; i=i+1){
+      duplicarElementos.push(array[i] * 2 ) }
+      console.log(duplicarElementos); 
          
-      var incremento = array.map(num => num * 2);
-      console.log(incremento); 
-      console.log(array.length);
-      console.log(array.length *2);
+      // var incremento = array.map(num => num * 2);
+      // console.log(incremento); 
+      // console.log(array.length);
+      // console.log(array.length *2);
    };
       
 
@@ -249,6 +254,7 @@ function convertirStringAMayusculas(array) {
         nuevoArray.push(array[i].toUpperCase())
       };
       console.log(nuevoArray);
+      return nuevoArray;    // NO LO EJECUTA PR NO TIENR "consol.log"
 
  };
 
