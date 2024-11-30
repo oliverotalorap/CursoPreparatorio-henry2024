@@ -11,10 +11,8 @@ console.log("C7-Arrays Ejercicio 02"+ " devolverUltimoElemento");
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+   //return array[array.length -1];
 
-   return array[array.length -1];
-
-   
    const ultimoElemento = array.length -1;
    return array[ultimoElemento];
 }
@@ -27,7 +25,7 @@ function obtenerLargoDelArray(array) {
    // Tu código:
    console.log(array);
    console.log(array.length);
-   return array.length;
+   return array.length;       // -console.log- y -returner- Hacen lo mismo
 }
 console.log(obtenerLargoDelArray([1, 2, 3, 4, 'hola', 6, 'Eje-3',8]));
 
@@ -43,7 +41,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
    console.log(array);
    return array;
 }
-console.log(agregarItemAlFinalDelArray([1, 2, 3 , 4, 'dia']));
+console.log(agregarItemAlFinalDelArray([1, 2, 3 , 4, 'dia', 5]));
 
 
 console.log("C7-Arrays Ejercicio "+ 5," agregarItemAlComienzotem");
@@ -56,7 +54,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
    console.log(array);
    return array;
 }
-agregarItemAlComienzoDelArray([4, 5, 'seis']);            //estudiar el pq;
+agregarItemAlComienzoDelArray(["A", 2, 'tres']);            //estudiar el pq;
 //console.log(agregarItemAlComienzoDelArray([4, 5, 'seis']));
 
 
@@ -69,11 +67,11 @@ function invertirArray(array) {
    console.log(array.reverse());  // Salida: [7, 6, 5, 4, 3, 2, 1]
 };
 invertirArray(array = [1, 2, 3, 4, 5, 6, 7]);  
-invertirArray(array = (["uno", "dos", "tres", "cinco"]));  
+invertirArray(array = (["uno", "dos", "tres", 4, "cinco"]));  
 //invertirArray([1, 2, 3, 4, 5, 6, 7]);  
 
 console.log("C7-Arrays Ejercicio "+ 7 + " -ordenarArray-");
-ordenarArray(array = [24, 8, 234, 4, 2, 'hola', 6, 'Eje',3, 4,]); // funciona con [];
+ordenarArray(array = [23, 8, 234, 4, 2, 'hola', 6, 'Eje',3, 4,]); // funciona con [];
 //console.log(ordenarArray([1, 8, 2, 4, 3, 345, 6, 35, 5, ]));
 function ordenarArray(array) {
    // Ordena los elementos del areglo array de menor a mayor.
@@ -119,7 +117,7 @@ function encontrarElemento(num, array) {
 
 console.log("C7-Arrays Ejercicio "+ 8+ "B" + " -arrayContiene-");
 //console.log(arrayContiene([8, "pais", 'haw',2, 4, 'dia',6, 'rei']));
-arrayContiene([8, "pais", 'haw',2, 4, 'dia',6, 'rei',10], "tia", 14, "mia");
+arrayContiene([8, "pais", 'haw',2, 4, 'dia',6, 'rei',10], "tia", 10, "mes");
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
@@ -147,7 +145,7 @@ function arrayContiene(array, elemento) {
    console.log("C7-Arrays Ejercicio "+ 9 + " -obtenerElementoAleatorio-");
    //console.log(obtenerElementoAleatorio(["perro", "gato", "cui", "loro", "león"]));
    //obtenerElementoAleatorio(array = [1, 2, 3, 4, 5, 6, 7, 8, 9]); // no funciona el -return-
-   console.log(obtenerElementoAleatorio([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+   console.log(obtenerElementoAleatorio([1, 2, "tres", 4, 5, 6, 7, 8, 9]));
    function obtenerElementoAleatorio(array) {
       // Devuelve un elemento aleatorio del arreglo array.
       // PISTA: Usa el método Math.random().
@@ -165,7 +163,7 @@ function arrayContiene(array, elemento) {
    console.log("C7-Arrays Ejercicio "+ 10 + " -obtenerPrimerStringLargo-");
    //obtenerPrimerStringLargo([10, "tr", 2, 'hola', 4, 'dia', 1, 'elemento']);
    //console.log(obtenerPrimerStringLargo(["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho"]));
-   obtenerPrimerStringLargo(["un", "dos", "tres", "ocho", "cinco", "seis", "siete", "cuatro"]);
+   obtenerPrimerStringLargo(["un", "dos", "tres", 8, "cinco", "seis", "siete", "cuatro"]);
    function obtenerPrimerStringLargo(array) {
       // Devuelve el primer string con más de 5 caracteres en el array.
       // Tu código:
@@ -224,12 +222,12 @@ function arrayContiene(array, elemento) {
       var incremento = array.map(num => num * 2);
       console.log(incremento); 
       console.log(array.length);
-      console.log(array.length *2);
+      console.log(array.length * 3);
    };
       
 
 console.log("C7-Arrays Ejercicio "+ 12 + " -convertirStringAMayusculas-");
-convertirStringAMayusculas(["dia", "tia", "hoy", "beto", "mama"]);
+convertirStringAMayusculas(["dia", "tia", "papa", "beto", "mama"]);
 function convertirStringAMayusculas(array) {
    // Convierte a mayúsculas todos los strings del array.
    // Retorna el arreglo resultante.
@@ -265,19 +263,19 @@ function filtrarNumerosPares(array) {
    var nuevo =[];
     for (var i = 0; i < array.length; i=i+1)
     if(array[i] % 2 == 0){ 
-      //nuevo.push(array[i])  
-      console.log(nuevo.push(array[i])); 
-      //console.log(nuevo);
+      nuevo.push(array[i])  
+      //console.log(nuevo.push(array[i])); // Funciona en una sola linea de texto
+      console.log(nuevo);      // Muestra una escalera donde hace ejercicio por Ejercico
    };
 
-   console.log(nuevo);
-   //return nuevo;
+   //console.log(nuevo);
+   return nuevo;        // Si no se utiiza retorna -Undefine_ 
  };
  
 
 console.log("C7-Arrays Ejercicio "+ 14 + " -contarElementosMayoresA10-");
 //console.log(cuentoElementos([1, 17, 200, 3, 33, 4, 456, 876])); 
-cuentoElementos([1, 17, 200, 3, 33, 4, 456, 876]); 
+cuentoElementos([1, 17, 200, 3, 33, 4, 456, 876, 11]); 
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo 
    // cuyo valor sea mayor que 10.
@@ -307,7 +305,7 @@ console.log("Estudiar como sacar los elementos");
 
 console.log("C7-Arrays Ejercicio "+ 15 + " A -encontrarIndiceMayor-");
 //console.log(encontrarIndiceMayorA([2, 3, 20, 50, 4, 5, 99, 98])); 
-encontrarIndiceMayorA([2, 3, 20, 50, 4, 5, 99, 98]); 
+encontrarIndiceMayorA([2, 3, 20, 50, 4, 5, 99, 98, 101]); 
 function encontrarIndiceMayorA(array) {
    // Encuentra el índice del número más grande en el array de números.
    // Devuelve el valor de este índice.      // Tu código:
@@ -343,7 +341,7 @@ function encontrarIndiceMayorA(array) {
 };
 
 console.log("C7-Arrays Ejercicio "+ 15 + " B -encontrarNumeroMayor-"); 
-encontrarIndiceMayor([3, 19, 600, 569, 45, 601, 568, 544]); 
+encontrarIndiceMayor([ 19, 600, 569, 45, 601, 568, 544]); 
 function encontrarIndiceMayor(array) {
    // Encuentra el índice del número más grande en el array de números.
    // Devuelve el valor de este índice.      // Tu código:
@@ -396,6 +394,7 @@ const porIndice = [];
 for(let i = 0; i < array.length; i=i+1){
 porIndice.push(array[i] * porIndice.length) 
 };
+console.log(porIndice);
 return porIndice;
 
 };
