@@ -4,10 +4,14 @@ function esIgualYNegativo(a, b) {
   // Determina si son iguales y son ambos negativos.
   // De ser así, retorna true, de lo contrario, retorna false.
   // Tu código:
+  console.log(a, b);
+
   // if (a == b && a < 0 && b < 0 ) return true;
   // else return false;
+
   if (a == b && a < 0 && b < 0 ) console.log (true);
     else console.log(false);
+    //else console.log(false);
 }
 esIgualYNegativo( -4, -4)
 esIgualYNegativo( -2, -4)
@@ -18,15 +22,17 @@ function esVerdaderoYFalso(booleano1, booleano2) {
   // La función recibe dos argumentos "booleano1" y "booleano2".
   // Retorna true si ambos son verdaderos, caso contrario, retorna false.
   // Tu código:
+  console.log(booleano1, booleano2);
+
   if (booleano1 == true && booleano2 == true) console.log(true)// return true;
   else console.log(false )//return false;
   
   //return booleano1 && booleano2;
 }
-esVerdaderoYFalso(true, true)
 esVerdaderoYFalso(true, false)
-esVerdaderoYFalso(false, true)
-esVerdaderoYFalso(false, false)
+// esVerdaderoYFalso(true, true)
+// esVerdaderoYFalso(false, true)
+// esVerdaderoYFalso(false, false)
 //module.exports = esVerdaderoYFalso;
 
 console.log("Bucles C-6 Ejercicio " + " 3 obtenerMayor" );
