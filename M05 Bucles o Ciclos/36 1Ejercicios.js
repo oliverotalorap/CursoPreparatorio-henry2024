@@ -11,7 +11,7 @@ function esIgualYNegativo(a, b) {
 
   if (a == b && a < 0 && b < 0 ) console.log (true);
     else console.log(false);
-    //else console.log(false);
+    //Directo:
 }
 esIgualYNegativo( -4, -4)
 esIgualYNegativo( -2, -4)
@@ -26,8 +26,8 @@ function esVerdaderoYFalso(booleano1, booleano2) {
 
   if (booleano1 == true && booleano2 == true) console.log(true)// return true;
   else console.log(false )//return false;
+  //Directo  
   
-  //return booleano1 && booleano2;
 }
 esVerdaderoYFalso(true, false)
 // esVerdaderoYFalso(true, true)
@@ -42,14 +42,15 @@ function obtenerMayor(x, y) {
   // Si son iguales, retornar cualquiera de los dos.
   // Tu código:
 
-  // if (x == y){return x;}
-  // else if (x > y ) {return x; }
-  // else return y;
+  if (x == y){return x;}
+  else if (x > y ) {return x; }
+  else return y;
+  // Directo:
        
-  if(x>y) console.log(x);
-  else if(x<y) console.log(y); 
-  else if(x === y) console.log(x); 
-  else console.log(y); 
+  // if(x>y) console.log(x);
+  // else if(x<y) console.log(y); 
+  // else if(x === y) console.log(x); 
+  // else console.log(y); 
   }
   obtenerMayor(5, 4);
   obtenerMayor(3+2, 4+1);
@@ -65,6 +66,7 @@ function mayoriaDeEdad(edad) {
   // else return "Not allowed";
   if(edad >= 18) console.log("Allowed");
   else console.log("Not allowed");
+  // Directo:
 }
 mayoriaDeEdad(20);
 mayoriaDeEdad(17);
@@ -76,6 +78,7 @@ function esVerdadero(valor) {
   // Tu código:
   if (valor == true) {return "Soy verdadero"}
   else return "Soy falso";
+  // Directo:
 }
 
 console.log("Bucles C-6 Ejercicio " + " 6 tieneTresDigitos" );
@@ -85,6 +88,7 @@ function tieneTresDigitos(num) {
   // Tu código:
   if (num <= 999 && num >99 ) {return true; }
   else return false;
+  //Directo:
 }
 
 console.log("Bucles C-6 Ejercicio " + " 7 esparYDivisiblePorTres" );
@@ -95,6 +99,7 @@ function esParYDivisiblePorTres(a) {
   // Tu código:
   if (a % 2 == 0 && a % 3 == 0) {return true; }
   else return false; 
+  //DIRECTO:
 }
 
 console.log("Bucles C-6 Ejercicio " + " 8 esPoivoOInferiorA10" );
@@ -105,6 +110,7 @@ function esPositivoOInferiorA10(a) {
   // Tu código:
   if (a >= 0 && a < 10) { return true; }
   else return false;
+  // DIRECTO: FALTA EL RESULTADO
 }
 
 console.log("Bucles C-6 Ejercicio " + " 9 conectionStatus" );
@@ -123,7 +129,10 @@ function conection(status) {
   if(status === 1) console.log("Online");
   else if(status === 2) console.log("Away");
   else console.log("Offline");
+  // DIRECTO
 } 
+conection(1);
+conection(2);
 conection(4);
 
 console.log("Bucles C-6 Ejercicio " + " 10 esdiesOCinco" );
@@ -137,6 +146,7 @@ function esDiezOCinco(num) {
 
   if(num === 10 || num === 5) console.log(true);
   else console.log(false);
+  // DIRECTO:
 }
 // esDiezOCinco(10);
 esDiezOCinco(4);
@@ -151,8 +161,9 @@ function estaEnRango(num) {
   // else return false;
   if(num < 50 && num > 20) console.log(true);
   else console.log(false);
+  // DIRECTO:
 }
-// estaEnRango(35);
+estaEnRango(35);
 estaEnRango(19);
 
 console.log("Bucles C-6 Ejercicio " + " 12 fizzBuzz" );
@@ -166,6 +177,7 @@ function fizzBuzz(num) {
   else if (num % 3 == 0) return "fizz";
   else if (num % 5 == 0) return "buzz";
   else return false;
+  // DIRECTO:
  }
 
 console.log("Bucles C-6 Ejercicio " + " 13 esEntero");
@@ -181,8 +193,10 @@ function esEntero(num) {
   // else return false;
    // return num % 1 === 0;
   console.log(num % 1 === 0);
+  // DIRECTO:
 }
-esEntero(0.5); // esEntero(3);
+esEntero(0.5); 
+esEntero(3);
 //return Number.isInteger(num);
 
 console.log("Bucles C-6 Ejercicio " + " 14 operadoresLogicos");
@@ -199,7 +213,14 @@ function operadoresLogicos(num1, num2, num3) {
   else if ( num3 > num1 && num3 > num2) return num3 + 1;
   else if ( num1 == 0 && num2 == 0 && num3 == 0 ) return "Error";
   else return false;
+  // 
 }
+operadoresLogicos[30, 20, 10];
+operadoresLogicos(30, 20, -10);
+operadoresLogicos(30, 20, -10);
+operadoresLogicos(40, 50, 60);
+operadoresLogicos(0, 0, 0);     // NO FUNCIONO ESTUDIAR:
+
 
 console.log("Bucles C-6 Ejercicio " + " 15 odtenerDiaSemana");
 function obtenerDiaSemana(numero) {
@@ -218,7 +239,12 @@ function obtenerDiaSemana(numero) {
   else if ( numero == 6 ) return "Sabado";
   else if ( numero == 7 ) return "Domingo";
   else return "No es un dia de la semana";
+  // DIRECTO:
 }
+obtenerDiaSemana(1);
+obtenerDiaSemana(3);
+obtenerDiaSemana(5);  // NO LO EJECUTO, ESTUDIAR
+
 
 console.log("Bucles C-6 Ejercicio " + " 16 saludo");
 function saludo(idioma) {
@@ -243,7 +269,8 @@ function saludo(idioma) {
     else if(idioma === "mandarin") console.log("Ni Hao!");
     else if(idioma == "ingles") console.log("Hello!");
     else console.log("Hola!"); // -NO RETORNA-
-}
+    // DIRECTO:
+  }
 saludo("aleman");
 
 
@@ -262,6 +289,7 @@ if (color == "red") return "This is red";
 if (color == "green") return "This is green";
 if (color == "orange") return "This is orange";
 else return "Color not found";  
+  // DIRECTO:
 
 const colores = {
   blue: "This is blue",
@@ -319,6 +347,7 @@ function productoEntreNúmeros(a, b) {
     //   suma = suma + 1;
     // }
     // return suma;
+    // IDIRECTO ESTUDIAR:
   }
   productoEntreNúmeros(1, 10);
 
@@ -331,8 +360,10 @@ function sumarHastaN(n) {
   for (let i = 1; i <= n; i++) {
     suma = suma + i;
   }
-  return suma;   
+  return suma; 
+  // INDIRECTO REPASAR EL BUCLE FOR:  
 }
+sumarHastaN(10);
 
 console.log("Bucles C-6 Ejercicio " + " 20 sumaHastaNConBreak");
 function sumarHastaNConBreak(n) {
@@ -356,6 +387,8 @@ function sumarHastaNConBreak(n) {
   
   // var i = 1; while (i < n) { if (i == 100) break;  i++; }
   // while (i < n) { if (i == 100) break; i++; }
+
+  // REPASAR Y ESTUDIARLO:
 }
 
 console.log("Bucles C-6 Ejercicio " + " 21 esPotenciaDeDos");
@@ -373,6 +406,7 @@ function esPotenciaDeDos(numero) {
 
   // if (numero % 2 == 0) return true;
   // else return false;
+    // INDIRECTO REPASAR Y ESTUDIAR:
 }
 
 console.log("Bucles C-6 Ejercicio " + " 22 doWhile");
@@ -397,8 +431,10 @@ function doWhile(num) {
   // console.log(result + " Resultado Total");
   console.log(num)
   // Expected output: "12345" // do-sentencia; while.-(condición);
+      // ESTUDIAR NO ENTENDI:
 } 
 doWhile(1);
+doWhile(2);
 
 i = 0;
 n = 0;
@@ -430,9 +466,10 @@ for (var i = 2; i < numero; i++) {
   if (numero % i === 0) console.log(false); 
 }
 console.log(true);
+    // eSTUDIAR Y REPASAR
 }
 esNumeroPrimo(8);
-esNumeroPrimo(11);
+// esNumeroPrimo(11);
 
 // if (numero % 2 === 0) return false;
 // else if (numero % 3 === 0) return false;
