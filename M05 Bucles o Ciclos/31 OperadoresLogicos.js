@@ -33,10 +33,12 @@ function mayorYMenorYPar(num) {
     console.log("Ejercicio-4 con not")
     function negacion(permiso) {
       if (permiso == true) console.log('Tiene permiso'); 
+      //if (permiso == false) console.log('No sale'); 
       else console.log("No tiene permiso");
     }
     negacion(true);
     negacion("Oliver");
+    negacion(false);
       
 console.log("Ejercicio-5" + " " + "COMPLEJA")
 console.log("Ejercicio-5 COMPLEJA")
@@ -47,8 +49,10 @@ function condicionCompleja(num) {
   }
   condicionCompleja(10);
   condicionCompleja(6);
-  condicionCompleja(12);
   condicionCompleja(3);
+  condicionCompleja(5);
+  condicionCompleja(11);
+  condicionCompleja(12);
   
 
 console.log("Ejercicio " + (5 + 1) + " " +"Boolean")

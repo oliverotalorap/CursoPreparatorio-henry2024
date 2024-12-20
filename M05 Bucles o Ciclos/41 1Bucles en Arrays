@@ -1,4 +1,4 @@
-console.log("Ejermplo " + 1);
+console.log("Ejermplo " + 1 + " Bucles y Arrays");
 // FOR
 var arr = [1, 2, 3, 4, 5];
 //for (let i = 0; i < 3; i++) {
@@ -8,7 +8,7 @@ for (let i = 0; i < arr.length; i++) {
     //console.log(arr);
 }
 
-console.log("Ejermplo " + (1+1));
+console.log("Ejermplo " + (1+1) + " Bucles y Arrays");
 
 // WHILE
 var arr = [];

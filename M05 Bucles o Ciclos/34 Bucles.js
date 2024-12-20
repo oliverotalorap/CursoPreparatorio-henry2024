@@ -50,9 +50,9 @@ console.log(suma + " variable suma");
 
 console.log("Ejercicio " + (0 + 3) + " Bucle for /para, por" )
 var suma = 0;
-for (let i = 0;  i<5; i++) {
+for (let i = 0;  i<=5; i++) {
     suma = suma + i;
-    //    console.log(i);  
+    //console.log(i);  
     console.log(i + ' Variable de iteración: ');     
 }
 console.log(suma);
