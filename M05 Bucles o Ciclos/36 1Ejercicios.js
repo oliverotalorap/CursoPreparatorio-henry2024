@@ -532,19 +532,19 @@ function esNumeroPrimo(numero) {
 // console.log(true);
     //NO PASA EN LA TERMINAL PERO PASA EN EL ESCRITORIO:
 
-    if (numero % 2 === 0) console.log(false);
-    else if (numero % 3 === 0) console.log(false);
-    else if (numero % 5 === 0) console.log(false);
-    else if (numero % 7 === 0) console.log(false);
-    else console.log(true);
+    // if (numero % 2 === 0) console.log(false);
+    // else if (numero % 3 === 0) console.log(false);
+    // else if (numero % 5 === 0) console.log(false);
+    // else if (numero % 7 === 0) console.log(false);
+    // else console.log(true);
     //PASA EN ESCRITORIO PERO NO PASA EN LA TERMINAL
     
-  //   switch (numero) {
-  //     case numero % 2 === 0: console.log(false); break;
-  //     case numero % 3 === 0: console.log(false); break;
-  //     case numero % 5 === 0: console.log(false); break;
-  //     case numero % 7 === 0: console.log(false); break;
-  //  default: console.log(true);} 
+    switch (numero) {
+      case numero % 2 === 0: console.log(false); break;
+      case numero % 3 === 0: console.log(false); break;
+      case numero % 5 === 0: console.log(false); break;
+      case numero % 7 === 0: console.log(false); break;
+   default: console.log(true);} 
   // NO FUNCIONO
     
   };

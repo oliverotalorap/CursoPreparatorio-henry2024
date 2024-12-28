@@ -467,15 +467,16 @@ for (var i = 2; i < numero; i++) {
 }
 console.log(true);
     // eSTUDIAR Y REPASAR
+
+    if (numero % 2 === 0) return false;
+    else if (numero % 3 === 0) return false;
+    else if (numero % 5 === 0) return false;
+    else if (numero % 7 === 0) return false;
+    else return true;
 }
 esNumeroPrimo(8);
-// esNumeroPrimo(11);
+esNumeroPrimo(11);
 
-// if (numero % 2 === 0) return false;
-// else if (numero % 3 === 0) return false;
-// else if (numero % 5 === 0) return false;
-// else if (numero % 7 === 0) return false;
-// else return true;
 
 // switch (numero) {
 //           case numero % 2 == 0: return false; 

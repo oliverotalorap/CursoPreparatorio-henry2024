@@ -1021,6 +1021,6 @@ function mayorACien(array) {
 
    console.log(nuevo.sort(function(a, b) {return a-b }));
    nuevo.sort(function(a, b) {return a-b });             //Retorna el resultado sin return.
-   //console.log(nuevo);
+   console.log(nuevo);
    //return nuevo;
 };
