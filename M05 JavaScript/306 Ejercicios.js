@@ -10,7 +10,7 @@ console.log("JavaScript C-6 Ejercicio " + " 2 nuevoNumero");
 // Crea una variable de tipo number.
 // Reemplaza el valor de null por el correspondiente.
 
-const nuevoNumero = 22;
+const nuevoNumero = 33;
 console.log(nuevoNumero);
 // number o numero
 {}
@@ -19,7 +19,7 @@ console.log("JavaScript C-6 Ejercicio " + " 3 nuevoBooleleano");
 // Crea una variable de tipo boolean.
 // Reemplaza el valor de null por el correspondiente.
 
-const nuevoBoolean = true;
+const nuevoBoolean = false;
 console.log(nuevoBoolean);
 // boolean: false o true.
 {}
@@ -32,7 +32,7 @@ const nuevaResta = 10 - 7 == 3;
 
 console.log(nuevaResta);  
 console.log(10 - 7);
-nuevaResta;
+// nuevaResta;
 {}
 
 console.log("JavaScript C-6 Ejercicio " + " 5 nuevaMultiplicacion");
@@ -136,6 +136,7 @@ function devolverString(string) {
     // "hola mundo" ---> "hola mundo" 
     // "SoyHenry" ---> "SoyHenry" 
     // Tu código:
+    console.log(string); 
    
     console.log(string);
     return string;

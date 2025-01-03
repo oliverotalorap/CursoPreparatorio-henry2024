@@ -7,20 +7,20 @@ function esPositivo(num) {
     // Si el número es negativo ---> "Es negativo".
     // Si el número es 0, devuelve false.
     // Tu código:
-//     if(num > 0) return "Es positivo";
-//     else if(num < 0) return "Es negativo"; 
-//     else if (num === 0) return false;
-//     esPositivo(0); 
+    // if(num > 0) return "Es positivo";
+    // else if(num < 0) return "Es negativo"; 
+    // else if (num === 0) return false;
+    // esPositivo(0); 
 // }
 if (num > 0) {console.log("Es positivo");}
-else if(num < 0) {console.log("Es negativo");}
-else if(num === 0) {console.log(false);}
+else if(num < 0) console.log("Es negativo");
+else if(num === 0) console.log(false);
 }
 esPositivo(0);
 esPositivo(2);
 esPositivo(-3);
 
-console.log(2+ "Ejer");
+console.log("Ejercicio-02");
 agregarSimboloExclamacion("Hola mundo");
 function agregarSimboloExclamacion(str) {
     // Agrega un símbolo de exclamación al final del string "str" y retórnalo
