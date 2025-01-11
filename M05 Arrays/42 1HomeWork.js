@@ -2,8 +2,11 @@ console.log("C7-Arrays Ejercicio 01" + " devolverPrimerElemento");
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
+   console.log(array);
+
+   //console.log(array[0]);
    return array[0];
-   //return array[0];
+   
 }
 console.log(devolverPrimerElemento([11, 2, 3, 4, 5, 6,'uno', 7]));
 
@@ -12,11 +15,11 @@ console.log("C7-Arrays Ejercicio 02"+ " devolverUltimoElemento");
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+   console.log(array);
    //return array[array.length -1];
 
    const ultimoElemento = array.length -1;
    return array[ultimoElemento];
-   //return array[ultimoElemento];
 }
 console.log(devolverUltimoElemento([1, 2, 3, 4, 22, "Edison", "He"]));
 
@@ -26,7 +29,8 @@ function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
    console.log(array);
-   console.log(array.length);
+
+   //console.log(array.length);
    return array.length;       // -console.log- y -returner- Hacen lo mismo
 }
 console.log(obtenerLargoDelArray([1, 2, 3, 4, 'hola', 6, 'Eje-3',8]));
@@ -38,10 +42,16 @@ function agregarItemAlFinalDelArray(array, elemento) {
    // Retorna el arreglo.
    // Tu código:
    console.log(array);
+
    //console.log(array.push('elemento', 'ElementoF'));// 
-   array.push('ElementoF', "demasElementos");
+   array.push("Elemento-Final");
    console.log(array);
-   return array;
+   //return array;
+   console.log(array[array.length-1]);
+   // const ultimoElemento = array.length -1;
+   // return array[ultimoElemento];
+   console.log(array.length + " Elementos");
+   return array[array.length-1];
 }
 console.log(agregarItemAlFinalDelArray([1, 2, 3 , 4, 'dia', 5]));
 
@@ -52,8 +62,10 @@ function agregarItemAlComienzoDelArray(array, elemento) {
    // Retorna el arreglo.
    // Tu código:
    console.log(array);
+
    array.unshift("elementoInicio"); 
    console.log(array);
+   console.log(array.length + " Elementos");
    return array;
 }
 agregarItemAlComienzoDelArray(["A", 2, 'tres']);            //estudiar el pq;
@@ -67,6 +79,7 @@ function invertirArray(array) {
    console.log(array);  // Salida: [1, 2, 3, 4, 5, 6, 7]
    
    console.log(array.reverse());  // Salida: [7, 6, 5, 4, 3, 2, 1]
+   console.log(array.length + " Elementos");
 };
 invertirArray(array = [1, 2, 3, 4, 5, 6, 7]);  
 invertirArray(array = (["uno", "dos", "tres", 4, "cinco"]));  
@@ -86,6 +99,7 @@ function ordenarArray(array) {
 
    array.sort(function(a, b) {return a-b });
    console.log(array);
+   console.log(array.length + " Elementos");
    //console.log(array.sort(function(a, b) {return a-b })); //En una 2 lineas de codigo.-
    //console.log(array.sort(function(a, b) {console.log(a-b) })); //NO FUNCIONA DESCARTADA
 };
