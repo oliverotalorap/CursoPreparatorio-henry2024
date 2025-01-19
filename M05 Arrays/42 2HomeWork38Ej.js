@@ -3,7 +3,8 @@ function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
    return array[0];
-   //return array[0];
+   
+
 }
 console.log(devolverPrimerElemento([11, 2, 3, 4, 5, 6,'uno', 7]));
 
@@ -16,6 +17,7 @@ function devolverUltimoElemento(array) {
 
    const ultimoElemento = array.length -1;
    return array[ultimoElemento];
+   //return array[ultimoElemento];
    //return array[ultimoElemento];
 }
 console.log(devolverUltimoElemento([1, 2, 3, 4, 22, "Edison", "He"]));

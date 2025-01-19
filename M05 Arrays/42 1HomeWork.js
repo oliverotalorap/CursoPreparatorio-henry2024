@@ -6,6 +6,7 @@ function devolverPrimerElemento(array) {
 
    //console.log(array[0]);
    return array[0];
+   //return array[0];
    
 }
 console.log(devolverPrimerElemento([11, 2, 3, 4, 5, 6,'uno', 7]));
