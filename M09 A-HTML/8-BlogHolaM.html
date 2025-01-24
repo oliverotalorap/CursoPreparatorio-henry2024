@@ -1,53 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">  <!-- lang="es" = Atributo que define el idioma -->
     <head>
-        <title>TITULO BLOCK</title>
+        <title>ETIQUETAS DE BLOCK </title>
+
     </head>
     <body>
         <header>
             <!--id es un atributo-->
             <!--class es un atributo-->
-            <h1 id="titulo">EJERCICIO DE UN BLOG en formato HTML</h1>
+            <h1 id="titulo">ETIQUETAS DE BLOQUE EN HTML</h1>
+            <H1> Clase de fecha Jueves 23-Enero-2025. </h1>
         </header>
-        <div> 
-            <P>parrafo del div-1</P>
-            <P>parrafo del div-2</P>
-            <p>Ejemplo de un parrafo <br>entro de un "div"</p>
-        </div>
-        
-        <section>
-            <article class="post">
-                <h2>Titulo de mi post</h2>
-                <p>Descripcion de mi post</p>
-                    <img src="imagenes/AustCids.png"
-                        height="100" width="100"
-                        alt="img Post-A",
-                        title="img Post-B",
-                    />
-                <p>Texto del articulo y texto de prueva Australi</p>
-            </article>
-            <article class="post">
-                <h2>Titulo de mi post-2</h2>
-                <p>Descripcion de mi post-2</p>
-                    <img src="imagenes/duster.png"
-                        height="100" width="100"
-                        alt="duster-A",
-                        title="duster-B",
-                    />
-                <p>Texto del articulo y texto de duster-2</p>
-            </article>
-            <article class="post">
-                <h2>Titulo de mi post-3</h2>
-                <p>Descripcion de mi post-3</p>
-                    <img src="imagenes/casa.jpg"
-                        height="100" width="100"
-                        alt="casa-A",
-                        title="casa-B",
-                    />
-                <p>Texto del articulo y texto de casa-3</p>
-            </article>
-        </section>
+        <main> 
+        <!-- <main> nos sirve para agrupar el contenido,util para organizar 
+            mejora la accesibilidad de la pagina web -->
+            <div> 
+                <p> -div- Es como una caja universal que nos permite agrupar elementos.
+                </p> 
+                <P>parrafo del div-1</P>
+                <P>parrafo del div-2</P>
+                <p>Ejemplo de un parrafo <br>dentro de un "div"</p>
+            </div>
+            
+            <section>
+                <article class="post">
+                    <h2>Titulo de mi post</h2>
+                    <p>Descripcion de mi post</p>
+                        <img src="imagenes/AustCids.png"
+                            height="100" width="100"
+                            alt="img Post-A",
+                            title="img Post-B",
+                        />
+                    <p>Texto del articulo y texto de prueva Australi</p>
+                </article>
+                <article class="post">
+                    <h2>Titulo de mi post-2</h2>
+                    <p>Descripcion de mi post-2</p>
+                        <img src="imagenes/duster.png"
+                            height="100" width="100"
+                            alt="duster-A",
+                            title="duster-B",
+                        />
+                    <p>Texto del articulo y texto de duster-2</p>
+                </article>
+                <article class="post">
+                    <h2>Titulo de mi post-3</h2>
+                    <p>Descripcion de mi post-3</p>
+                        <img src="imagenes/casa.jpg"
+                            height="100" width="100"
+                            alt="casa-A",
+                            title="casa-B",
+                        />
+                    <p>Texto del articulo y texto de casa-3</p>
+                </article>
+            </section>
+        </main>
         <footer>
+            <p>Este es el -footer- o -pie de pagina-  
+                Es un esppacio para enlaces, 
+            </p>
+            <span>Enlace--1</span>
+            <span>Enlace--2</span>
+            <span>Enlace--3</span>
+
             <a href="#titulo">Ir al comienzo</a>
             <br>
             <a href="#post">Ir al 1ra imagen</a>
