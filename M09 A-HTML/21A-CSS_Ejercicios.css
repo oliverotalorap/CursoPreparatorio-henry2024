@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Document-CSS</title>
-    <link rel="stylesheet" herf="40-style.css"/>
-</head>
-<body>
-    <h1 id="titulo"> Titulo-1</h1>
-    <P class="texto">Tecto parrafo del Titulo-1</P>
-    <P class="texto">Tecto parrafo del Titulo-1</P>
+
     
     /* 1- El Valor se lo representan los ":" 
           las propiedades se separan por ";"*/
     p {
         color: red;
-        font-size: 16px;
-    }
+        font-size: 16px }
+    
     /* 2- Las propiedades se pueden escrubir de corrido o
         una debajo de la otra */
     p {
         color: rgb(225, 29, 29); 
         font-size: 16px;
-        border: solid 1px green;
-    }
+        border: solid 1px green; }
     /* 3- Las propiedades representadas por numeros, 
         deve indicar en que unidad se expresa,
         Entre el numero y la unidad -no esoacios- */
@@ -51,7 +41,4 @@
     .azul {
         color: blue;
     }
-
-</body>
-</html>
 

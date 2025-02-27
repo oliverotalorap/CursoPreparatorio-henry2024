@@ -1,11 +1,9 @@
-<!DOCTYPE html>
 
-    <title>Document-CSS</title>
-    <link rel="stylesheet" herf="40-style.css"/>
-</head>
-<body>
-    <h1 id="titulo"> Titulo-1</h1>
-    <P class="texto">Tecto parrafo del Titulo-1</P>
+
+    /* <title>Document-CSS</title> */
+
+    /* <h1 id="titulo"> Titulo-1</h1> */
+    /* <P class="texto">Tecto parrafo del Titulo-1</P> */
    
     /* 5- Si se necesita aplicar el mismo formato a 
         Elementos diferentes solo se separan por comas ",",, */
@@ -30,13 +28,9 @@
         color: blue; }
     
     /* 82- Lesson. Propiedades Color */
-    h1 {
-        color: red; }
-    h2 {
-        color: #ff0055; }
-    h3 {
-        color: rgb(30, 210, 65); }
-    h4 {
-        color: rgba(30, 210, 65, 0.5); }
+    h1 { color: red; }
+    h2 { color: #ff0055; }
+    h3 { color: rgb(30, 210, 65); }
+    h4 { color: rgba(30, 210, 65, 0.5); }
 
 

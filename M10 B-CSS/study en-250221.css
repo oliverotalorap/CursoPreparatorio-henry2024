@@ -1,0 +1,36 @@
+p.super { color:blueviolet; 
+    border: dashed 2px orange; 
+    font-size: 20px; }
+
+section {
+    padding: 40px 20px;
+    margin-left: 40px; }
+section article {
+    background-color: #cccccc;
+    width: 500px; }
+section article h2 {
+    height: 2em; }
+
+    .rojo { color: red; }
+    .azul { color: blue; }
+
+    ul li { color: red; }
+    ol li { color: blue; }
+
+    h2 { color: red; }
+    h3 { color: #ff0055; }
+    h4 { color: rgb(30, 210, 65); }
+    h4 { color: rgb ( 30, 210, 65); }
+    h5 { color: rgba( 30, 210, 65, 0.5); }
+    
+    h2 { font-family: "comic sans SM", sans-serif; }
+    h3 { font-weight: bold; }
+    h4 { font-size: 20px; }
+    h5 { font-size: 150%; }
+
+    h1 { text-align: center; }
+    h2 { text-align: right; }
+    h3 { text-align: left; }
+    h4 { text-align: justify; }
+
+    
