@@ -8,6 +8,7 @@
     if (x == y) { console.log(true); } 
     else { console.log(false); } } 
     sonIguales(2+1, 3);
+    sonIguales(2+1, 3);
 
  // function tienenMismaLongitud(str1, str2) {
     // Retorna true si los dos strings tienen la misma longitud.

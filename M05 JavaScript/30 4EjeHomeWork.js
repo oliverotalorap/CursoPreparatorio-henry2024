@@ -9,6 +9,8 @@ function elevarAlCuadrado(num) {
     // return elevarAlCuadrado; 
     console.log(elevarAlCuadrado) }
 elevarAlCuadrado(3);
+
+
 console.log(2 + " Ejercicio");
  function elevarAlCubo(num) {
     // Retorna el valor de "num" elevado al cubo.
@@ -17,6 +19,7 @@ console.log(2 + " Ejercicio");
     // return Math.pow(num,3); 
     console.log(elevarAlCubo) }
 elevarAlCubo(3); 
+
 
 console.log(3 + " Ejercicio");
  function elevar(num, exponent) {
